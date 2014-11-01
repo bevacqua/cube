@@ -11,11 +11,11 @@ body {
   -o-transition: background-color 10s;
   -ms-transition: background-color 10s;
   transition: background-color 10s;
-  -webkit-animation: cube-ground 40s alternate infinite;
-  -moz-animation: cube-ground 40s alternate infinite;
-  -o-animation: cube-ground 40s alternate infinite;
-  -ms-animation: cube-ground 40s alternate infinite;
-  animation: cube-ground 40s alternate infinite;
+  -webkit-animation: cube-ground 40s alternate infinite steps(15);
+  -moz-animation: cube-ground 40s alternate infinite steps(15);
+  -o-animation: cube-ground 40s alternate infinite steps(15);
+  -ms-animation: cube-ground 40s alternate infinite steps(15);
+  animation: cube-ground 40s alternate infinite steps(15);
 }
 @-moz-keyframes cube-ground {
   0% {
@@ -165,18 +165,18 @@ body {
 .you-0.pc-cube {
   width: 15px;
   height: 15px;
-  -webkit-animation: pc-bounce-wrapper-0 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-0 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-0 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-0 5s alternate infinite;
-  animation: pc-bounce-wrapper-0 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-0 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-0 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-0 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-0 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-0 5s alternate infinite steps(18);
 }
 .you-0 .pc-faces {
-  -webkit-animation: pc-rotate-faces-0 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-0 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-0 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-0 1.8s alternate infinite;
-  animation: pc-rotate-faces-0 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-0 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-0 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-0 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-0 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-0 1.8s alternate infinite steps(18);
 }
 .you-0 .pc-face {
   width: 15px;
@@ -198,11 +198,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-0 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-0 0.5s alternate infinite;
-  -o-animation: pc-glow-front-0 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-0 0.5s alternate infinite;
-  animation: pc-glow-front-0 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-0 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-0 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-0 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-0 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-0 0.5s alternate infinite steps(18);
   color: #e92c6c;
 }
 .you-0 .pc-back {
@@ -218,11 +218,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-0 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-0 0.3s alternate infinite;
-  -o-animation: pc-glow-back-0 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-0 0.3s alternate infinite;
-  animation: pc-glow-back-0 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-0 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-0 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-0 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-0 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-0 0.3s alternate infinite steps(18);
   border-color: #d6c012;
   text-transform: uppercase;
 }
@@ -239,11 +239,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-0 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-0 0.7s alternate infinite;
-  -o-animation: pc-glow-right-0 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-0 0.7s alternate infinite;
-  animation: pc-glow-right-0 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-0 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-0 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-0 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-0 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-0 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -260,11 +260,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-0 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-0 0.9s alternate infinite;
-  -o-animation: pc-glow-left-0 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-0 0.9s alternate infinite;
-  animation: pc-glow-left-0 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-0 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-0 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-0 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-0 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-0 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .you-0 .pc-top {
@@ -280,11 +280,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-0 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-0 0.9s alternate infinite;
-  -o-animation: pc-glow-top-0 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-0 0.9s alternate infinite;
-  animation: pc-glow-top-0 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-0 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-0 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-0 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-0 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-0 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -301,11 +301,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-0 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-0 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-0 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-0 0.4s alternate infinite;
-  animation: pc-glow-bottom-0 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-0 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-0 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-0 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-0 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-0 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-0 {
   0% {
@@ -998,18 +998,18 @@ body {
 .you-1.pc-cube {
   width: 20px;
   height: 20px;
-  -webkit-animation: pc-bounce-wrapper-30% 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-30% 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-30% 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-30% 5s alternate infinite;
-  animation: pc-bounce-wrapper-30% 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-30% 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-30% 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-30% 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-30% 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-30% 5s alternate infinite steps(18);
 }
 .you-1 .pc-faces {
-  -webkit-animation: pc-rotate-faces-30% 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-30% 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-30% 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-30% 1.8s alternate infinite;
-  animation: pc-rotate-faces-30% 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-30% 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-30% 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-30% 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-30% 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-30% 1.8s alternate infinite steps(18);
 }
 .you-1 .pc-face {
   width: 20px;
@@ -1031,11 +1031,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-30% 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-30% 0.5s alternate infinite;
-  -o-animation: pc-glow-front-30% 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-30% 0.5s alternate infinite;
-  animation: pc-glow-front-30% 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-30% 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-30% 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-30% 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-30% 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-30% 0.5s alternate infinite steps(18);
   color: #e92c2d;
 }
 .you-1 .pc-back {
@@ -1051,11 +1051,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-30% 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-30% 0.3s alternate infinite;
-  -o-animation: pc-glow-back-30% 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-30% 0.3s alternate infinite;
-  animation: pc-glow-back-30% 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-30% 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-30% 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-30% 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-30% 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-30% 0.3s alternate infinite steps(18);
   border-color: #abd612;
   text-transform: uppercase;
 }
@@ -1072,11 +1072,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-30% 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-30% 0.7s alternate infinite;
-  -o-animation: pc-glow-right-30% 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-30% 0.7s alternate infinite;
-  animation: pc-glow-right-30% 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-30% 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-30% 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-30% 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-30% 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-30% 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -1093,11 +1093,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-30% 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-30% 0.9s alternate infinite;
-  -o-animation: pc-glow-left-30% 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-30% 0.9s alternate infinite;
-  animation: pc-glow-left-30% 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-30% 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-30% 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-30% 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-30% 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-30% 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .you-1 .pc-top {
@@ -1113,11 +1113,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-30% 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-30% 0.9s alternate infinite;
-  -o-animation: pc-glow-top-30% 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-30% 0.9s alternate infinite;
-  animation: pc-glow-top-30% 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-30% 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-30% 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-30% 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-30% 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-30% 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -1134,11 +1134,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-30% 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-30% 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-30% 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-30% 0.4s alternate infinite;
-  animation: pc-glow-bottom-30% 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-30% 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-30% 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-30% 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-30% 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-30% 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-30% {
   0% {
@@ -1831,18 +1831,18 @@ body {
 .you-2.pc-cube {
   width: 30px;
   height: 30px;
-  -webkit-animation: pc-bounce-wrapper--30% 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper--30% 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper--30% 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper--30% 5s alternate infinite;
-  animation: pc-bounce-wrapper--30% 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper--30% 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper--30% 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper--30% 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper--30% 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper--30% 5s alternate infinite steps(18);
 }
 .you-2 .pc-faces {
-  -webkit-animation: pc-rotate-faces--30% 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces--30% 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces--30% 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces--30% 1.8s alternate infinite;
-  animation: pc-rotate-faces--30% 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces--30% 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces--30% 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces--30% 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces--30% 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces--30% 1.8s alternate infinite steps(18);
 }
 .you-2 .pc-face {
   width: 30px;
@@ -1864,11 +1864,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front--30% 0.5s alternate infinite;
-  -moz-animation: pc-glow-front--30% 0.5s alternate infinite;
-  -o-animation: pc-glow-front--30% 0.5s alternate infinite;
-  -ms-animation: pc-glow-front--30% 0.5s alternate infinite;
-  animation: pc-glow-front--30% 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front--30% 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front--30% 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front--30% 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front--30% 0.5s alternate infinite steps(18);
+  animation: pc-glow-front--30% 0.5s alternate infinite steps(18);
   color: #e94b2c;
 }
 .you-2 .pc-back {
@@ -1884,11 +1884,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back--30% 0.3s alternate infinite;
-  -moz-animation: pc-glow-back--30% 0.3s alternate infinite;
-  -o-animation: pc-glow-back--30% 0.3s alternate infinite;
-  -ms-animation: pc-glow-back--30% 0.3s alternate infinite;
-  animation: pc-glow-back--30% 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back--30% 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back--30% 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back--30% 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back--30% 0.3s alternate infinite steps(18);
+  animation: pc-glow-back--30% 0.3s alternate infinite steps(18);
   border-color: #8ad612;
   text-transform: uppercase;
 }
@@ -1905,11 +1905,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right--30% 0.7s alternate infinite;
-  -moz-animation: pc-glow-right--30% 0.7s alternate infinite;
-  -o-animation: pc-glow-right--30% 0.7s alternate infinite;
-  -ms-animation: pc-glow-right--30% 0.7s alternate infinite;
-  animation: pc-glow-right--30% 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right--30% 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right--30% 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right--30% 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right--30% 0.7s alternate infinite steps(18);
+  animation: pc-glow-right--30% 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -1926,11 +1926,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left--30% 0.9s alternate infinite;
-  -moz-animation: pc-glow-left--30% 0.9s alternate infinite;
-  -o-animation: pc-glow-left--30% 0.9s alternate infinite;
-  -ms-animation: pc-glow-left--30% 0.9s alternate infinite;
-  animation: pc-glow-left--30% 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left--30% 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left--30% 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left--30% 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left--30% 0.9s alternate infinite steps(18);
+  animation: pc-glow-left--30% 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .you-2 .pc-top {
@@ -1946,11 +1946,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top--30% 0.9s alternate infinite;
-  -moz-animation: pc-glow-top--30% 0.9s alternate infinite;
-  -o-animation: pc-glow-top--30% 0.9s alternate infinite;
-  -ms-animation: pc-glow-top--30% 0.9s alternate infinite;
-  animation: pc-glow-top--30% 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top--30% 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top--30% 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top--30% 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top--30% 0.9s alternate infinite steps(18);
+  animation: pc-glow-top--30% 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -1967,11 +1967,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom--30% 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom--30% 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom--30% 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom--30% 0.4s alternate infinite;
-  animation: pc-glow-bottom--30% 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom--30% 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom--30% 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom--30% 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom--30% 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom--30% 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front--30% {
   0% {
@@ -2664,18 +2664,18 @@ body {
 .you-3.pc-cube {
   width: 40px;
   height: 40px;
-  -webkit-animation: pc-bounce-wrapper-20% 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-20% 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-20% 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-20% 5s alternate infinite;
-  animation: pc-bounce-wrapper-20% 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-20% 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-20% 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-20% 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-20% 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-20% 5s alternate infinite steps(18);
 }
 .you-3 .pc-faces {
-  -webkit-animation: pc-rotate-faces-20% 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-20% 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-20% 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-20% 1.8s alternate infinite;
-  animation: pc-rotate-faces-20% 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-20% 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-20% 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-20% 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-20% 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-20% 1.8s alternate infinite steps(18);
 }
 .you-3 .pc-face {
   width: 40px;
@@ -2697,11 +2697,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-20% 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-20% 0.5s alternate infinite;
-  -o-animation: pc-glow-front-20% 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-20% 0.5s alternate infinite;
-  animation: pc-glow-front-20% 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-20% 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-20% 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-20% 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-20% 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-20% 0.5s alternate infinite steps(18);
   color: #e96a2c;
 }
 .you-3 .pc-back {
@@ -2717,11 +2717,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-20% 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-20% 0.3s alternate infinite;
-  -o-animation: pc-glow-back-20% 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-20% 0.3s alternate infinite;
-  animation: pc-glow-back-20% 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-20% 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-20% 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-20% 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-20% 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-20% 0.3s alternate infinite steps(18);
   border-color: #69d612;
   text-transform: uppercase;
 }
@@ -2738,11 +2738,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-20% 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-20% 0.7s alternate infinite;
-  -o-animation: pc-glow-right-20% 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-20% 0.7s alternate infinite;
-  animation: pc-glow-right-20% 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-20% 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-20% 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-20% 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-20% 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-20% 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -2759,11 +2759,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-20% 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-20% 0.9s alternate infinite;
-  -o-animation: pc-glow-left-20% 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-20% 0.9s alternate infinite;
-  animation: pc-glow-left-20% 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-20% 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-20% 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-20% 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-20% 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-20% 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .you-3 .pc-top {
@@ -2779,11 +2779,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-20% 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-20% 0.9s alternate infinite;
-  -o-animation: pc-glow-top-20% 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-20% 0.9s alternate infinite;
-  animation: pc-glow-top-20% 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-20% 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-20% 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-20% 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-20% 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-20% 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -2800,11 +2800,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-20% 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-20% 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-20% 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-20% 0.4s alternate infinite;
-  animation: pc-glow-bottom-20% 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-20% 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-20% 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-20% 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-20% 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-20% 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-20% {
   0% {
@@ -3497,18 +3497,18 @@ body {
 .you-1.pc-cube {
   width: 30px;
   height: 30px;
-  -webkit-animation: pc-bounce-wrapper-6 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-6 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-6 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-6 5s alternate infinite;
-  animation: pc-bounce-wrapper-6 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-6 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-6 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-6 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-6 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-6 5s alternate infinite steps(18);
 }
 .you-1 .pc-faces {
-  -webkit-animation: pc-rotate-faces-6 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-6 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-6 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-6 1.8s alternate infinite;
-  animation: pc-rotate-faces-6 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-6 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-6 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-6 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-6 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-6 1.8s alternate infinite steps(18);
 }
 .you-1 .pc-face {
   width: 30px;
@@ -3530,11 +3530,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-6 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-6 0.5s alternate infinite;
-  -o-animation: pc-glow-front-6 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-6 0.5s alternate infinite;
-  animation: pc-glow-front-6 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-6 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-6 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-6 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-6 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-6 0.5s alternate infinite steps(18);
   color: #e92c2d;
 }
 .you-1 .pc-back {
@@ -3550,11 +3550,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-6 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-6 0.3s alternate infinite;
-  -o-animation: pc-glow-back-6 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-6 0.3s alternate infinite;
-  animation: pc-glow-back-6 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-6 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-6 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-6 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-6 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-6 0.3s alternate infinite steps(18);
   border-color: #abd612;
   text-transform: uppercase;
 }
@@ -3571,11 +3571,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-6 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-6 0.7s alternate infinite;
-  -o-animation: pc-glow-right-6 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-6 0.7s alternate infinite;
-  animation: pc-glow-right-6 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-6 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-6 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-6 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-6 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-6 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -3592,11 +3592,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-6 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-6 0.9s alternate infinite;
-  -o-animation: pc-glow-left-6 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-6 0.9s alternate infinite;
-  animation: pc-glow-left-6 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-6 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-6 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-6 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-6 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-6 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .you-1 .pc-top {
@@ -3612,11 +3612,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-6 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-6 0.9s alternate infinite;
-  -o-animation: pc-glow-top-6 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-6 0.9s alternate infinite;
-  animation: pc-glow-top-6 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-6 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-6 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-6 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-6 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-6 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -3633,11 +3633,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-6 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-6 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-6 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-6 0.4s alternate infinite;
-  animation: pc-glow-bottom-6 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-6 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-6 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-6 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-6 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-6 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-6 {
   0% {
@@ -4330,18 +4330,18 @@ body {
 .npc-0.pc-cube {
   width: 25px;
   height: 25px;
-  -webkit-animation: pc-bounce-wrapper-1 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-1 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-1 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-1 5s alternate infinite;
-  animation: pc-bounce-wrapper-1 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-1 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-1 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-1 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-1 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-1 5s alternate infinite steps(18);
 }
 .npc-0 .pc-faces {
-  -webkit-animation: pc-rotate-faces-1 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-1 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-1 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-1 1.8s alternate infinite;
-  animation: pc-rotate-faces-1 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-1 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-1 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-1 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-1 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-1 1.8s alternate infinite steps(18);
 }
 .npc-0 .pc-face {
   width: 25px;
@@ -4363,11 +4363,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-1 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-1 0.5s alternate infinite;
-  -o-animation: pc-glow-front-1 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-1 0.5s alternate infinite;
-  animation: pc-glow-front-1 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-1 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-1 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-1 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-1 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-1 0.5s alternate infinite steps(18);
   color: #e9a92c;
 }
 .npc-0 .pc-back {
@@ -4383,11 +4383,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-1 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-1 0.3s alternate infinite;
-  -o-animation: pc-glow-back-1 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-1 0.3s alternate infinite;
-  animation: pc-glow-back-1 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-1 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-1 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-1 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-1 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-1 0.3s alternate infinite steps(18);
   border-color: #28d612;
   text-transform: uppercase;
 }
@@ -4404,11 +4404,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-1 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-1 0.7s alternate infinite;
-  -o-animation: pc-glow-right-1 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-1 0.7s alternate infinite;
-  animation: pc-glow-right-1 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-1 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-1 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-1 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-1 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-1 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -4425,11 +4425,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-1 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-1 0.9s alternate infinite;
-  -o-animation: pc-glow-left-1 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-1 0.9s alternate infinite;
-  animation: pc-glow-left-1 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-1 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-1 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-1 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-1 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-1 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .npc-0 .pc-top {
@@ -4445,11 +4445,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-1 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-1 0.9s alternate infinite;
-  -o-animation: pc-glow-top-1 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-1 0.9s alternate infinite;
-  animation: pc-glow-top-1 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-1 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-1 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-1 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-1 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-1 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -4466,11 +4466,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-1 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-1 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-1 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-1 0.4s alternate infinite;
-  animation: pc-glow-bottom-1 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-1 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-1 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-1 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-1 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-1 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-1 {
   0% {
@@ -5163,18 +5163,18 @@ body {
 .npc-1.pc-cube {
   width: 50px;
   height: 50px;
-  -webkit-animation: pc-bounce-wrapper-5 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-5 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-5 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-5 5s alternate infinite;
-  animation: pc-bounce-wrapper-5 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-5 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-5 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-5 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-5 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-5 5s alternate infinite steps(18);
 }
 .npc-1 .pc-faces {
-  -webkit-animation: pc-rotate-faces-5 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-5 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-5 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-5 1.8s alternate infinite;
-  animation: pc-rotate-faces-5 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-5 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-5 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-5 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-5 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-5 1.8s alternate infinite steps(18);
 }
 .npc-1 .pc-face {
   width: 50px;
@@ -5196,11 +5196,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-5 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-5 0.5s alternate infinite;
-  -o-animation: pc-glow-front-5 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-5 0.5s alternate infinite;
-  animation: pc-glow-front-5 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-5 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-5 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-5 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-5 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-5 0.5s alternate infinite steps(18);
   color: #a41fe8;
 }
 .npc-1 .pc-back {
@@ -5216,11 +5216,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-5 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-5 0.3s alternate infinite;
-  -o-animation: pc-glow-back-5 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-5 0.3s alternate infinite;
-  animation: pc-glow-back-5 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-5 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-5 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-5 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-5 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-5 0.3s alternate infinite steps(18);
   border-color: #cb1126;
   text-transform: uppercase;
 }
@@ -5237,11 +5237,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-5 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-5 0.7s alternate infinite;
-  -o-animation: pc-glow-right-5 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-5 0.7s alternate infinite;
-  animation: pc-glow-right-5 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-5 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-5 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-5 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-5 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-5 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -5258,11 +5258,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-5 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-5 0.9s alternate infinite;
-  -o-animation: pc-glow-left-5 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-5 0.9s alternate infinite;
-  animation: pc-glow-left-5 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-5 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-5 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-5 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-5 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-5 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .npc-1 .pc-top {
@@ -5278,11 +5278,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-5 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-5 0.9s alternate infinite;
-  -o-animation: pc-glow-top-5 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-5 0.9s alternate infinite;
-  animation: pc-glow-top-5 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-5 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-5 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-5 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-5 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-5 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -5299,11 +5299,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-5 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-5 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-5 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-5 0.4s alternate infinite;
-  animation: pc-glow-bottom-5 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-5 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-5 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-5 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-5 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-5 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-5 {
   0% {
@@ -5996,18 +5996,18 @@ body {
 .npc-2.pc-cube {
   width: 100px;
   height: 100px;
-  -webkit-animation: pc-bounce-wrapper-7 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-7 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-7 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-7 5s alternate infinite;
-  animation: pc-bounce-wrapper-7 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-7 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-7 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-7 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-7 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-7 5s alternate infinite steps(18);
 }
 .npc-2 .pc-faces {
-  -webkit-animation: pc-rotate-faces-7 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-7 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-7 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-7 1.8s alternate infinite;
-  animation: pc-rotate-faces-7 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-7 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-7 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-7 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-7 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-7 1.8s alternate infinite steps(18);
 }
 .npc-2 .pc-face {
   width: 100px;
@@ -6029,11 +6029,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-7 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-7 0.5s alternate infinite;
-  -o-animation: pc-glow-front-7 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-7 0.5s alternate infinite;
-  animation: pc-glow-front-7 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-7 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-7 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-7 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-7 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-7 0.5s alternate infinite steps(18);
   color: #000;
 }
 .npc-2 .pc-back {
@@ -6049,11 +6049,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-7 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-7 0.3s alternate infinite;
-  -o-animation: pc-glow-back-7 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-7 0.3s alternate infinite;
-  animation: pc-glow-back-7 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-7 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-7 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-7 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-7 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-7 0.3s alternate infinite steps(18);
   border-color: #000;
   text-transform: uppercase;
 }
@@ -6070,11 +6070,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-7 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-7 0.7s alternate infinite;
-  -o-animation: pc-glow-right-7 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-7 0.7s alternate infinite;
-  animation: pc-glow-right-7 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-7 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-7 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-7 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-7 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-7 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -6091,11 +6091,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-7 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-7 0.9s alternate infinite;
-  -o-animation: pc-glow-left-7 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-7 0.9s alternate infinite;
-  animation: pc-glow-left-7 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-7 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-7 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-7 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-7 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-7 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .npc-2 .pc-top {
@@ -6111,11 +6111,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-7 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-7 0.9s alternate infinite;
-  -o-animation: pc-glow-top-7 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-7 0.9s alternate infinite;
-  animation: pc-glow-top-7 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-7 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-7 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-7 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-7 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-7 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -6132,11 +6132,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-7 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-7 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-7 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-7 0.4s alternate infinite;
-  animation: pc-glow-bottom-7 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-7 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-7 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-7 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-7 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-7 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-7 {
   0% {
@@ -6829,18 +6829,18 @@ body {
 .npc-3.pc-cube {
   width: 150px;
   height: 150px;
-  -webkit-animation: pc-bounce-wrapper-8 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-8 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-8 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-8 5s alternate infinite;
-  animation: pc-bounce-wrapper-8 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-8 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-8 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-8 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-8 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-8 5s alternate infinite steps(18);
 }
 .npc-3 .pc-faces {
-  -webkit-animation: pc-rotate-faces-8 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-8 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-8 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-8 1.8s alternate infinite;
-  animation: pc-rotate-faces-8 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-8 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-8 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-8 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-8 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-8 1.8s alternate infinite steps(18);
 }
 .npc-3 .pc-face {
   width: 150px;
@@ -6862,11 +6862,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-8 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-8 0.5s alternate infinite;
-  -o-animation: pc-glow-front-8 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-8 0.5s alternate infinite;
-  animation: pc-glow-front-8 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-8 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-8 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-8 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-8 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-8 0.5s alternate infinite steps(18);
   color: #972610;
 }
 .npc-3 .pc-back {
@@ -6882,11 +6882,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-8 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-8 0.3s alternate infinite;
-  -o-animation: pc-glow-back-8 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-8 0.3s alternate infinite;
-  animation: pc-glow-back-8 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-8 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-8 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-8 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-8 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-8 0.3s alternate infinite steps(18);
   border-color: #53800b;
   text-transform: uppercase;
 }
@@ -6903,11 +6903,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-8 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-8 0.7s alternate infinite;
-  -o-animation: pc-glow-right-8 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-8 0.7s alternate infinite;
-  animation: pc-glow-right-8 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-8 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-8 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-8 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-8 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-8 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -6924,11 +6924,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-8 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-8 0.9s alternate infinite;
-  -o-animation: pc-glow-left-8 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-8 0.9s alternate infinite;
-  animation: pc-glow-left-8 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-8 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-8 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-8 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-8 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-8 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .npc-3 .pc-top {
@@ -6944,11 +6944,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-8 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-8 0.9s alternate infinite;
-  -o-animation: pc-glow-top-8 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-8 0.9s alternate infinite;
-  animation: pc-glow-top-8 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-8 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-8 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-8 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-8 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-8 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -6965,11 +6965,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-8 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-8 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-8 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-8 0.4s alternate infinite;
-  animation: pc-glow-bottom-8 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-8 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-8 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-8 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-8 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-8 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-8 {
   0% {
@@ -7662,18 +7662,18 @@ body {
 .npc-4.pc-cube {
   width: 230px;
   height: 230px;
-  -webkit-animation: pc-bounce-wrapper-9 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-9 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-9 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-9 5s alternate infinite;
-  animation: pc-bounce-wrapper-9 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-9 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-9 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-9 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-9 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-9 5s alternate infinite steps(18);
 }
 .npc-4 .pc-faces {
-  -webkit-animation: pc-rotate-faces-9 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-9 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-9 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-9 1.8s alternate infinite;
-  animation: pc-rotate-faces-9 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-9 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-9 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-9 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-9 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-9 1.8s alternate infinite steps(18);
 }
 .npc-4 .pc-face {
   width: 230px;
@@ -7695,11 +7695,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-9 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-9 0.5s alternate infinite;
-  -o-animation: pc-glow-front-9 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-9 0.5s alternate infinite;
-  animation: pc-glow-front-9 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-9 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-9 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-9 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-9 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-9 0.5s alternate infinite steps(18);
   color: #7d0d6b;
 }
 .npc-4 .pc-back {
@@ -7715,11 +7715,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-9 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-9 0.3s alternate infinite;
-  -o-animation: pc-glow-back-9 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-9 0.3s alternate infinite;
-  animation: pc-glow-back-9 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-9 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-9 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-9 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-9 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-9 0.3s alternate infinite steps(18);
   border-color: #6b2f09;
   text-transform: uppercase;
 }
@@ -7736,11 +7736,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-9 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-9 0.7s alternate infinite;
-  -o-animation: pc-glow-right-9 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-9 0.7s alternate infinite;
-  animation: pc-glow-right-9 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-9 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-9 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-9 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-9 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-9 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -7757,11 +7757,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-9 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-9 0.9s alternate infinite;
-  -o-animation: pc-glow-left-9 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-9 0.9s alternate infinite;
-  animation: pc-glow-left-9 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-9 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-9 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-9 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-9 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-9 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .npc-4 .pc-top {
@@ -7777,11 +7777,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-9 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-9 0.9s alternate infinite;
-  -o-animation: pc-glow-top-9 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-9 0.9s alternate infinite;
-  animation: pc-glow-top-9 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-9 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-9 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-9 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-9 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-9 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -7798,11 +7798,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-9 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-9 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-9 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-9 0.4s alternate infinite;
-  animation: pc-glow-bottom-9 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-9 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-9 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-9 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-9 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-9 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-9 {
   0% {
@@ -8495,18 +8495,18 @@ body {
 .npc-5.pc-cube {
   width: 300px;
   height: 300px;
-  -webkit-animation: pc-bounce-wrapper-10 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-10 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-10 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-10 5s alternate infinite;
-  animation: pc-bounce-wrapper-10 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-10 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-10 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-10 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-10 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-10 5s alternate infinite steps(18);
 }
 .npc-5 .pc-faces {
-  -webkit-animation: pc-rotate-faces-10 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-10 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-10 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-10 1.8s alternate infinite;
-  animation: pc-rotate-faces-10 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-10 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-10 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-10 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-10 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-10 1.8s alternate infinite steps(18);
 }
 .npc-5 .pc-face {
   width: 300px;
@@ -8528,11 +8528,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-10 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-10 0.5s alternate infinite;
-  -o-animation: pc-glow-front-10 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-10 0.5s alternate infinite;
-  animation: pc-glow-front-10 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-10 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-10 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-10 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-10 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-10 0.5s alternate infinite steps(18);
   color: #64460a;
 }
 .npc-5 .pc-back {
@@ -8548,11 +8548,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-10 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-10 0.3s alternate infinite;
-  -o-animation: pc-glow-back-10 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-10 0.3s alternate infinite;
-  animation: pc-glow-back-10 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-10 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-10 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-10 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-10 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-10 0.3s alternate infinite steps(18);
   border-color: #105607;
   text-transform: uppercase;
 }
@@ -8569,11 +8569,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-10 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-10 0.7s alternate infinite;
-  -o-animation: pc-glow-right-10 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-10 0.7s alternate infinite;
-  animation: pc-glow-right-10 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-10 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-10 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-10 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-10 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-10 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -8590,11 +8590,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-10 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-10 0.9s alternate infinite;
-  -o-animation: pc-glow-left-10 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-10 0.9s alternate infinite;
-  animation: pc-glow-left-10 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-10 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-10 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-10 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-10 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-10 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .npc-5 .pc-top {
@@ -8610,11 +8610,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-10 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-10 0.9s alternate infinite;
-  -o-animation: pc-glow-top-10 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-10 0.9s alternate infinite;
-  animation: pc-glow-top-10 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-10 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-10 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-10 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-10 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-10 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -8631,11 +8631,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-10 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-10 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-10 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-10 0.4s alternate infinite;
-  animation: pc-glow-bottom-10 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-10 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-10 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-10 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-10 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-10 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-10 {
   0% {
@@ -10053,18 +10053,18 @@ body {
 .npc-6.pc-cube {
   width: 350px;
   height: 350px;
-  -webkit-animation: pc-bounce-wrapper-11 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-11 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-11 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-11 5s alternate infinite;
-  animation: pc-bounce-wrapper-11 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-11 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-11 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-11 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-11 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-11 5s alternate infinite steps(18);
 }
 .npc-6 .pc-faces {
-  -webkit-animation: pc-rotate-faces-11 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-11 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-11 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-11 1.8s alternate infinite;
-  animation: pc-rotate-faces-11 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-11 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-11 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-11 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-11 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-11 1.8s alternate infinite steps(18);
 }
 .npc-6 .pc-face {
   width: 350px;
@@ -10086,11 +10086,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-11 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-11 0.5s alternate infinite;
-  -o-animation: pc-glow-front-11 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-11 0.5s alternate infinite;
-  animation: pc-glow-front-11 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-11 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-11 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-11 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-11 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-11 0.5s alternate infinite steps(18);
   color: #34084b;
 }
 .npc-6 .pc-back {
@@ -10106,11 +10106,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-11 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-11 0.3s alternate infinite;
-  -o-animation: pc-glow-back-11 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-11 0.3s alternate infinite;
-  animation: pc-glow-back-11 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-11 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-11 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-11 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-11 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-11 0.3s alternate infinite steps(18);
   border-color: #40050c;
   text-transform: uppercase;
 }
@@ -10127,11 +10127,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-11 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-11 0.7s alternate infinite;
-  -o-animation: pc-glow-right-11 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-11 0.7s alternate infinite;
-  animation: pc-glow-right-11 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-11 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-11 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-11 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-11 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-11 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -10148,11 +10148,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-11 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-11 0.9s alternate infinite;
-  -o-animation: pc-glow-left-11 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-11 0.9s alternate infinite;
-  animation: pc-glow-left-11 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-11 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-11 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-11 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-11 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-11 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .npc-6 .pc-top {
@@ -10168,11 +10168,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-11 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-11 0.9s alternate infinite;
-  -o-animation: pc-glow-top-11 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-11 0.9s alternate infinite;
-  animation: pc-glow-top-11 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-11 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-11 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-11 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-11 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-11 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -10189,11 +10189,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-11 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-11 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-11 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-11 0.4s alternate infinite;
-  animation: pc-glow-bottom-11 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-11 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-11 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-11 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-11 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-11 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-11 {
   0% {
@@ -10886,18 +10886,18 @@ body {
 .bullet-0.pc-cube {
   width: 4px;
   height: 4px;
-  -webkit-animation: pc-bounce-wrapper-2 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-2 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-2 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-2 5s alternate infinite;
-  animation: pc-bounce-wrapper-2 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-2 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-2 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-2 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-2 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-2 5s alternate infinite steps(18);
 }
 .bullet-0 .pc-faces {
-  -webkit-animation: pc-rotate-faces-2 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-2 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-2 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-2 1.8s alternate infinite;
-  animation: pc-rotate-faces-2 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-2 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-2 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-2 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-2 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-2 1.8s alternate infinite steps(18);
 }
 .bullet-0 .pc-face {
   width: 4px;
@@ -10919,11 +10919,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-2 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-2 0.5s alternate infinite;
-  -o-animation: pc-glow-front-2 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-2 0.5s alternate infinite;
-  animation: pc-glow-front-2 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-2 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-2 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-2 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-2 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-2 0.5s alternate infinite steps(18);
   color: #97d516;
 }
 .bullet-0 .pc-back {
@@ -10939,11 +10939,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-2 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-2 0.3s alternate infinite;
-  -o-animation: pc-glow-back-2 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-2 0.3s alternate infinite;
-  animation: pc-glow-back-2 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-2 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-2 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-2 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-2 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-2 0.3s alternate infinite steps(18);
   border-color: #0fb66c;
   text-transform: uppercase;
 }
@@ -10960,11 +10960,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-2 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-2 0.7s alternate infinite;
-  -o-animation: pc-glow-right-2 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-2 0.7s alternate infinite;
-  animation: pc-glow-right-2 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-2 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-2 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-2 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-2 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-2 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -10981,11 +10981,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-2 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-2 0.9s alternate infinite;
-  -o-animation: pc-glow-left-2 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-2 0.9s alternate infinite;
-  animation: pc-glow-left-2 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-2 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-2 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-2 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-2 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-2 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .bullet-0 .pc-top {
@@ -11001,11 +11001,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-2 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-2 0.9s alternate infinite;
-  -o-animation: pc-glow-top-2 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-2 0.9s alternate infinite;
-  animation: pc-glow-top-2 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-2 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-2 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-2 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-2 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-2 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -11022,11 +11022,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-2 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-2 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-2 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-2 0.4s alternate infinite;
-  animation: pc-glow-bottom-2 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-2 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-2 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-2 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-2 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-2 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-2 {
   0% {
@@ -11719,18 +11719,18 @@ body {
 .bullet-1.pc-cube {
   width: 6px;
   height: 6px;
-  -webkit-animation: pc-bounce-wrapper-3 5s alternate infinite;
-  -moz-animation: pc-bounce-wrapper-3 5s alternate infinite;
-  -o-animation: pc-bounce-wrapper-3 5s alternate infinite;
-  -ms-animation: pc-bounce-wrapper-3 5s alternate infinite;
-  animation: pc-bounce-wrapper-3 5s alternate infinite;
+  -webkit-animation: pc-bounce-wrapper-3 5s alternate infinite steps(18);
+  -moz-animation: pc-bounce-wrapper-3 5s alternate infinite steps(18);
+  -o-animation: pc-bounce-wrapper-3 5s alternate infinite steps(18);
+  -ms-animation: pc-bounce-wrapper-3 5s alternate infinite steps(18);
+  animation: pc-bounce-wrapper-3 5s alternate infinite steps(18);
 }
 .bullet-1 .pc-faces {
-  -webkit-animation: pc-rotate-faces-3 1.8s alternate infinite;
-  -moz-animation: pc-rotate-faces-3 1.8s alternate infinite;
-  -o-animation: pc-rotate-faces-3 1.8s alternate infinite;
-  -ms-animation: pc-rotate-faces-3 1.8s alternate infinite;
-  animation: pc-rotate-faces-3 1.8s alternate infinite;
+  -webkit-animation: pc-rotate-faces-3 1.8s alternate infinite steps(18);
+  -moz-animation: pc-rotate-faces-3 1.8s alternate infinite steps(18);
+  -o-animation: pc-rotate-faces-3 1.8s alternate infinite steps(18);
+  -ms-animation: pc-rotate-faces-3 1.8s alternate infinite steps(18);
+  animation: pc-rotate-faces-3 1.8s alternate infinite steps(18);
 }
 .bullet-1 .pc-face {
   width: 6px;
@@ -11752,11 +11752,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-front-3 0.5s alternate infinite;
-  -moz-animation: pc-glow-front-3 0.5s alternate infinite;
-  -o-animation: pc-glow-front-3 0.5s alternate infinite;
-  -ms-animation: pc-glow-front-3 0.5s alternate infinite;
-  animation: pc-glow-front-3 0.5s alternate infinite;
+  -webkit-animation: pc-glow-front-3 0.5s alternate infinite steps(18);
+  -moz-animation: pc-glow-front-3 0.5s alternate infinite steps(18);
+  -o-animation: pc-glow-front-3 0.5s alternate infinite steps(18);
+  -ms-animation: pc-glow-front-3 0.5s alternate infinite steps(18);
+  animation: pc-glow-front-3 0.5s alternate infinite steps(18);
   color: #975310;
 }
 .bullet-1 .pc-back {
@@ -11772,11 +11772,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-back-3 0.3s alternate infinite;
-  -moz-animation: pc-glow-back-3 0.3s alternate infinite;
-  -o-animation: pc-glow-back-3 0.3s alternate infinite;
-  -ms-animation: pc-glow-back-3 0.3s alternate infinite;
-  animation: pc-glow-back-3 0.3s alternate infinite;
+  -webkit-animation: pc-glow-back-3 0.3s alternate infinite steps(18);
+  -moz-animation: pc-glow-back-3 0.3s alternate infinite steps(18);
+  -o-animation: pc-glow-back-3 0.3s alternate infinite steps(18);
+  -ms-animation: pc-glow-back-3 0.3s alternate infinite steps(18);
+  animation: pc-glow-back-3 0.3s alternate infinite steps(18);
   border-color: #2c800b;
   text-transform: uppercase;
 }
@@ -11793,11 +11793,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-right-3 0.7s alternate infinite;
-  -moz-animation: pc-glow-right-3 0.7s alternate infinite;
-  -o-animation: pc-glow-right-3 0.7s alternate infinite;
-  -ms-animation: pc-glow-right-3 0.7s alternate infinite;
-  animation: pc-glow-right-3 0.7s alternate infinite;
+  -webkit-animation: pc-glow-right-3 0.7s alternate infinite steps(18);
+  -moz-animation: pc-glow-right-3 0.7s alternate infinite steps(18);
+  -o-animation: pc-glow-right-3 0.7s alternate infinite steps(18);
+  -ms-animation: pc-glow-right-3 0.7s alternate infinite steps(18);
+  animation: pc-glow-right-3 0.7s alternate infinite steps(18);
   font-style: italic;
   border-style: dotted;
 }
@@ -11814,11 +11814,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-left-3 0.9s alternate infinite;
-  -moz-animation: pc-glow-left-3 0.9s alternate infinite;
-  -o-animation: pc-glow-left-3 0.9s alternate infinite;
-  -ms-animation: pc-glow-left-3 0.9s alternate infinite;
-  animation: pc-glow-left-3 0.9s alternate infinite;
+  -webkit-animation: pc-glow-left-3 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-left-3 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-left-3 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-left-3 0.9s alternate infinite steps(18);
+  animation: pc-glow-left-3 0.9s alternate infinite steps(18);
   text-decoration: underline;
 }
 .bullet-1 .pc-top {
@@ -11834,11 +11834,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-top-3 0.9s alternate infinite;
-  -moz-animation: pc-glow-top-3 0.9s alternate infinite;
-  -o-animation: pc-glow-top-3 0.9s alternate infinite;
-  -ms-animation: pc-glow-top-3 0.9s alternate infinite;
-  animation: pc-glow-top-3 0.9s alternate infinite;
+  -webkit-animation: pc-glow-top-3 0.9s alternate infinite steps(18);
+  -moz-animation: pc-glow-top-3 0.9s alternate infinite steps(18);
+  -o-animation: pc-glow-top-3 0.9s alternate infinite steps(18);
+  -ms-animation: pc-glow-top-3 0.9s alternate infinite steps(18);
+  animation: pc-glow-top-3 0.9s alternate infinite steps(18);
   text-transform: lowercase;
   border-style: double;
 }
@@ -11855,11 +11855,11 @@ body {
   opacity: 1;
   -ms-filter: none;
   filter: none;
-  -webkit-animation: pc-glow-bottom-3 0.4s alternate infinite;
-  -moz-animation: pc-glow-bottom-3 0.4s alternate infinite;
-  -o-animation: pc-glow-bottom-3 0.4s alternate infinite;
-  -ms-animation: pc-glow-bottom-3 0.4s alternate infinite;
-  animation: pc-glow-bottom-3 0.4s alternate infinite;
+  -webkit-animation: pc-glow-bottom-3 0.4s alternate infinite steps(18);
+  -moz-animation: pc-glow-bottom-3 0.4s alternate infinite steps(18);
+  -o-animation: pc-glow-bottom-3 0.4s alternate infinite steps(18);
+  -ms-animation: pc-glow-bottom-3 0.4s alternate infinite steps(18);
+  animation: pc-glow-bottom-3 0.4s alternate infinite steps(18);
 }
 @-moz-keyframes pc-glow-front-3 {
   0% {

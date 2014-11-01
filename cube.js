@@ -18,6 +18,7 @@ var LEFT = 37;
 var TOP = 38;
 var RIGHT = 39;
 var BOTTOM = 40;
+var R = 82;
 
 global.$ = $;
 
@@ -25,10 +26,18 @@ console.log('%cWelcome to Pony Cube! Use the arrow keys.', 'font-family: "Merriw
 
 body.on('click', welcome);
 body.on('keydown', welcoming);
+body.on('keydown', specials);
 
 function welcoming (e) {
   if (e.which === SPACE) {
     welcome();
+  }
+}
+
+function specials (e) {
+  if (e.which === R) {
+    cleanup();
+    restart();
   }
 }
 
@@ -98,16 +107,20 @@ function gameloop () {
 
 function gameover () {
   $('.rt-tint').addClass('rt-show');
-  yourCubeInternal.removeClass('pc-show');
-  body.off('keyup', ku);
-  body.off('keydown', kd);
-  npcs.clear();
-  mobs.splice(0, mobs.length);
+  cleanup();
   console.log('%cYOU\'RE VERY MUCH DEAD WOW~!', 'font-family: "Comic Sans MS"; font-size: 25px; color: #d11911;');
 
   setTimeout(function () {
     body.on('keydown', restart);
   }, 500);
+}
+
+function cleanup () {
+  yourCubeInternal.removeClass('pc-show');
+  body.off('keyup', ku);
+  body.off('keydown', kd);
+  npcs.clear();
+  mobs.splice(0, mobs.length);
 }
 
 function restart (e) {

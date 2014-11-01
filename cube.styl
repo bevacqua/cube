@@ -39,7 +39,7 @@ pc-cube(cubeSize, fontSize, keyframeSuffix, spinOffset=0%, darkenFactor=0%)
   &.pc-cube
     width cubeSize
     height cubeSize
-    animation (pc-bounce-wrapper- + keyframeSuffix) 5s alternate infinite
+    animation (pc-bounce-wrapper- + keyframeSuffix) 5s alternate infinite steps(18)
 
   pc-face(x, y, c)
     transform rotateX(x) rotateY(y) translateZ(half)
@@ -49,7 +49,7 @@ pc-cube(cubeSize, fontSize, keyframeSuffix, spinOffset=0%, darkenFactor=0%)
     opacity 1
 
   .pc-faces
-    animation (pc-rotate-faces- + keyframeSuffix) 1.8s alternate infinite
+    animation (pc-rotate-faces- + keyframeSuffix) 1.8s alternate infinite steps(18)
 
   .pc-face
     width cubeSize
@@ -60,35 +60,35 @@ pc-cube(cubeSize, fontSize, keyframeSuffix, spinOffset=0%, darkenFactor=0%)
 
   .pc-front
     pc-face(0, 0, c-pink-light)
-    animation (pc-glow-front- + keyframeSuffix) 0.5s alternate infinite
+    animation (pc-glow-front- + keyframeSuffix) 0.5s alternate infinite steps(18)
     color darken(spin(c-pink, spinOffset), darkenFactor)
 
   .pc-back
     pc-face(180deg, 0, c-yellow-js)
-    animation (pc-glow-back- + keyframeSuffix) 0.3s alternate infinite
+    animation (pc-glow-back- + keyframeSuffix) 0.3s alternate infinite steps(18)
     border-color darken(spin(darken(c-yellow-js, 30%), spinOffset), darkenFactor)
     text-transform uppercase
 
   .pc-right
     pc-face(0, 90deg, c-blue-light)
-    animation (pc-glow-right- + keyframeSuffix) 0.7s alternate infinite
+    animation (pc-glow-right- + keyframeSuffix) 0.7s alternate infinite steps(18)
     font-style italic
     border-style dotted
 
   .pc-left
     pc-face(0, -90deg, c-strongish)
-    animation (pc-glow-left- + keyframeSuffix) 0.9s alternate infinite
+    animation (pc-glow-left- + keyframeSuffix) 0.9s alternate infinite steps(18)
     text-decoration underline
 
   .pc-top
     pc-face(90deg, 0, c-light)
-    animation (pc-glow-top- + keyframeSuffix) 0.9s alternate infinite
+    animation (pc-glow-top- + keyframeSuffix) 0.9s alternate infinite steps(18)
     text-transform lowercase
     border-style double
 
   .pc-bottom
     pc-face(-90deg, 0, c-green-light)
-    animation (pc-glow-bottom- + keyframeSuffix) 0.4s alternate infinite
+    animation (pc-glow-bottom- + keyframeSuffix) 0.4s alternate infinite steps(18)
 
   @keyframes pc-glow-front-{keyframeSuffix}
     0%
