@@ -10,6 +10,9 @@ body
 .deathflash
   animation deathflash 0.1s alternate infinite
 
+.rainstorm
+  animation rainstorm 0.3s alternate infinite
+
 @keyframes cube-ground
   0%
     background-color c-background
@@ -35,6 +38,23 @@ body
     opacity 1
   60%
     background-color c-red
+  80%
+    background-color lighten(c-light, 30%)
+  100%
+    background-color #fff
+
+@keyframes rainstorm
+  0%
+    background-color c-blue
+  20%
+    background-color c-green-light
+    opacity 0.7
+  40%
+    background-color lighten(c-blue-light, 50%)
+    opacity 1
+  60%
+    background-color c-blue
+    opacity 0.6
   80%
     background-color lighten(c-light, 30%)
   100%

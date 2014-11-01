@@ -24,6 +24,8 @@ module.exports = function (you) {
     4: once(require('./level/4')),
     5: once(require('./level/5')),
     6: once(require('./level/6')),
+    7: once(require('./level/7')),
+    8: once(require('./level/8')),
   };
 
   emitter.on('npc.kill', function (cleared) {

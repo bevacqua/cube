@@ -104,7 +104,9 @@ function gameloop () {
   var cdNoPows = cd.filter(noPows);
   cd.filter(onlyPows).forEach(usePow);
   if (you.kia || cdNoPows.length) {
-    you.damage();
+    cdNoPows.forEach(function (m) {
+      you.damage(m.level);
+    });
     if (you.kia) {
       gameover('YOU\'RE VERY MUCH DEAD WOW~!'); return;
     }

@@ -14,7 +14,7 @@ function tick () {
     }
 
     function damage (target) {
-      target.damage();
+      target.damage(bullet.level);
       bullet.remove();
     }
   });

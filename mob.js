@@ -162,9 +162,10 @@ function mob (node, options) {
     setLevel(Math.min(me.level + l, m || Infinity));
   }
 
-  function damage () {
-    if (me.level > 0) {
-      setLevel(me.level - 1);
+  function damage (l) {
+    var lv = l || 1;
+    if (me.level > lv - 1) {
+      setLevel(me.level - lv);
       emitter.emit('mob.leveldown', me, me.level);
     } else {
       remove();

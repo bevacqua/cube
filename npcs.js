@@ -3,7 +3,7 @@ var npcs = [];
 function clear () {
   var npc;
   while (npc = npcs.shift()) {
-    npc.node.remove();
+    npc.mob.remove();
   }
 }
 
