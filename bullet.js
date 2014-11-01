@@ -4,7 +4,7 @@ var emitter = require('./emitter');
 var us = require('./us');
 
 function r () { return Math.random(); }
-function rstale () { var v = r(); return r > 0.66 ? -1 : r > 0.33 ? 1 : 0; }
+function rstale () { var v = r(); return v > 0.66 ? -1 : v > 0.33 ? 1 : 0; }
 
 function bullet (source, options) {
   var o = options || {};

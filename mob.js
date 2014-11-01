@@ -5,6 +5,7 @@ var us = require('./us');
 var lastbullet = Date.now();
 var bulletrate = 300;
 var screenmargin = 30;
+var lastId = 0;
 
 function r () { return Math.random(); }
 
@@ -18,7 +19,9 @@ function mob (node, options) {
   var d = {
     x: 0, y: 0
   };
+  var ltype;
   var me = {
+    id: lastId++,
     type: o.type,
     node: node,
     move: move,

@@ -1,3 +1,4 @@
+var pows = require('./powerups');
 var npcs = require('./npcs');
 var npc = require('./npc');
 var emitter = require('./emitter');
@@ -39,6 +40,7 @@ module.exports = function (you) {
     you.set(50, 50);
     if (levels[level]) {
       npcs.clear();
+      pows.clear();
       levels[level](you);
     } else {
       console.log('%cLEVEL %s CLEAR ZOMG SUCH GAMER~!', 'font-family: "Cardo"; font-size: 25px; color: #a4d4e6;', level);

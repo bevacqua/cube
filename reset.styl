@@ -7,6 +7,9 @@ body
   transition background-color 10s
   animation cube-ground 40s alternate infinite steps(15)
 
+.deathflash
+  animation deathflash 0.1s alternate infinite
+
 @keyframes cube-ground
   0%
     background-color c-background
@@ -20,3 +23,19 @@ body
     background-color c-light
   100%
     background-color lighten(c-green-light, 15%)
+
+@keyframes deathflash
+  0%
+    background-color c-light
+  20%
+    background-color #fff
+    opacity 0.7
+  40%
+    background-color lighten(c-blue-light, 50%)
+    opacity 1
+  60%
+    background-color c-red
+  80%
+    background-color lighten(c-light, 30%)
+  100%
+    background-color #fff
