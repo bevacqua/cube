@@ -1,7 +1,7 @@
 {
   "name": "cube",
   "version": "1.0.0",
-  "description": "",
+  "description": "Play with a cube and shoot cubes to other cubes. The boss is a cube.",
   "main": "cube.js",
   "dependencies": {
     "contra.emitter": "^1.0.1",
