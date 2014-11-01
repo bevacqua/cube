@@ -1,0 +1,17 @@
+{
+  "name": "cube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cube.js",
+  "dependencies": {
+    "contra.emitter": "^1.0.1",
+    "dominus": "^2.3.8",
+    "lodash.throttle": "^2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "stylus -w all.styl -o compiled & watchify -d cube.js -o compiled/cube.js & open compiled/cube.html"
+  },
+  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
+  "license": "MIT"
+}

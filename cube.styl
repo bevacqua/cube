@@ -1,0 +1,171 @@
+.pc-parent
+  position fixed
+  cursor default
+
+.pc-cube
+  transition transform 0.7s
+  transform-style preserve-3d
+  opacity 0
+
+.pc-faces,
+.pc-face
+  transform-style preserve-3d
+
+.pc-faces
+  width 100%
+  height 100%
+  position absolute
+  cursor wait
+  user-select none
+  transition all 1s
+
+.pc-face
+  display block
+  position absolute
+  font-weight bold
+  text-align center
+  transition all 1.2s
+
+.pc-smooth
+  transition-property all
+
+.pc-show
+  opacity 1
+
+pc-cube(cubeSize, fontSize, keyframeSuffix, spinOffset=0%, darkenFactor=0%)
+  half = cubeSize / 2
+  halfNegative = half * -1
+
+  &.pc-cube
+    width cubeSize
+    height cubeSize
+    animation (pc-bounce-wrapper- + keyframeSuffix) 5s alternate infinite
+
+  pc-face(x, y, c)
+    transform rotateX(x) rotateY(y) translateZ(half)
+    background-color rgba(darken(spin(c, spinOffset), darkenFactor), 0.9)
+    border 5px dashed darken(spin(darken(c, 15%), spinOffset), darkenFactor)
+    box-shadow 3px 3px 50px darken(spin(c, spinOffset), darkenFactor)
+    opacity 1
+
+  .pc-faces
+    animation (pc-rotate-faces- + keyframeSuffix) 1.8s alternate infinite
+
+  .pc-face
+    width cubeSize
+    height cubeSize
+    line-height cubeSize / 3
+    font-size fontSize
+    color darken(spin(c-strong, spinOffset), darkenFactor)
+
+  .pc-front
+    pc-face(0, 0, c-pink-light)
+    animation (pc-glow-front- + keyframeSuffix) 0.5s alternate infinite
+    color darken(spin(c-pink, spinOffset), darkenFactor)
+
+  .pc-back
+    pc-face(180deg, 0, c-yellow-js)
+    animation (pc-glow-back- + keyframeSuffix) 0.3s alternate infinite
+    border-color darken(spin(darken(c-yellow-js, 30%), spinOffset), darkenFactor)
+    text-transform uppercase
+
+  .pc-right
+    pc-face(0, 90deg, c-blue-light)
+    animation (pc-glow-right- + keyframeSuffix) 0.7s alternate infinite
+    font-style italic
+    border-style dotted
+
+  .pc-left
+    pc-face(0, -90deg, c-strongish)
+    animation (pc-glow-left- + keyframeSuffix) 0.9s alternate infinite
+    text-decoration underline
+
+  .pc-top
+    pc-face(90deg, 0, c-light)
+    animation (pc-glow-top- + keyframeSuffix) 0.9s alternate infinite
+    text-transform lowercase
+    border-style double
+
+  .pc-bottom
+    pc-face(-90deg, 0, c-green-light)
+    animation (pc-glow-bottom- + keyframeSuffix) 0.4s alternate infinite
+
+  @keyframes pc-glow-front-{keyframeSuffix}
+    0%
+      background-color darken(spin(c-pink-light, spinOffset), darkenFactor)
+    100%
+      background-color darken(spin(lighten(c-pink-light, 30%), spinOffset), darkenFactor)
+      opacity 0.7
+      font-size fontSize * 1.3
+
+  @keyframes pc-glow-back-{keyframeSuffix}
+    0%
+      background-color darken(spin(c-yellow-js, spinOffset), darkenFactor)
+    100%
+      background-color darken(spin(lighten(c-yellow-js, 20%), spinOffset), darkenFactor)
+      opacity 0.7
+      font-size fontSize * 0.6
+
+  @keyframes pc-glow-right-{keyframeSuffix}
+    0%
+      background-color darken(spin(c-blue-light, spinOffset), darkenFactor)
+      opacity 0.6
+    100%
+      background-color darken(spin(darken(c-blue-light, 30%), spinOffset), darkenFactor)
+      opacity 1
+      font-size fontSize * 0.9
+
+  @keyframes pc-glow-left-{keyframeSuffix}
+    0%
+      background-color darken(spin(c-strongish, spinOffset), darkenFactor)
+      opacity 1
+    100%
+      background-color darken(spin(spin(c-strongish, 20%), spinOffset), darkenFactor)
+      opacity 0.8
+      font-size fontSize * 0.4
+
+  @keyframes pc-glow-top-{keyframeSuffix}
+    0%
+      background-color darken(spin(c-light, spinOffset), darkenFactor)
+      opacity 1
+    100%
+      background-color darken(spin(#fff, spinOffset), darkenFactor)
+      opacity 0.05
+      font-size fontSize * 2
+
+  @keyframes pc-glow-bottom-{keyframeSuffix}
+    0%
+      background-color darken(spin(c-green-light, spinOffset), darkenFactor)
+      opacity 0.9
+    100%
+      background-color darken(spin(darken(c-green-light, 30%), spinOffset), darkenFactor)
+      opacity 0.05
+      font-size fontSize * 1.3
+
+  @keyframes pc-bounce-wrapper-{keyframeSuffix}
+    0%
+      transform inherit
+    20%
+      transform rotate(60deg) rotateY(60deg)
+    40%
+      transform rotateX(-200deg) rotateY(20deg)
+    60%
+      transform rotate(150deg) rotateX(-120deg)
+    80%
+      transform rotateX(150deg) rotateY(-125deg)
+    100%
+      transform rotateX(-40deg)
+
+  @keyframes pc-rotate-faces-{keyframeSuffix}
+    0%
+      transform translateZ(halfNegative) rotateY(0deg)
+    20%
+      transform translateZ(halfNegative) rotateX(-180deg)
+    40%
+      transform translateZ(halfNegative) rotateY(-90deg)
+    60%
+      transform translateZ(halfNegative) rotateX(-90deg)
+    80%
+      transform translateZ(halfNegative) rotateY(90deg)
+    100%
+      transform translateZ(halfNegative) rotateX(90deg)

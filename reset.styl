@@ -1,0 +1,22 @@
+*
+  box-sizing border-box
+
+body
+  font-family Cardo
+  background-color c-background
+  transition background-color 10s
+  animation cube-ground 40s alternate infinite
+
+@keyframes cube-ground
+  0%
+    background-color c-background
+  20%
+    background-color lighten(c-pink-light, 15%)
+  40%
+    background-color lighten(c-blue-light, 15%)
+  60%
+    background-color lighten(c-strongish, 15%)
+  80%
+    background-color c-light
+  100%
+    background-color lighten(c-green-light, 15%)
