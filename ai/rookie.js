@@ -11,7 +11,7 @@ module.exports = function (npc) {
   var idle = 0;
   var d;
   var redirect = throttle(changeDirection, 300 + r() * 1000);
-  var shootrate = 3500;
+  var shootrate = 2000;
   var lastShooting = Date.now() + shootrate;
 
   function changeDirection () {
