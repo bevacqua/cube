@@ -20,6 +20,15 @@ function tick () {
   });
 }
 
-module.exports = bullets;
+function clear () {
+  var bullet;
+  while ((bullet = bullets.shift())) {
+    bullet.clear = true;
+    bullet.remove();
+  }
+}
+
+module.exports = global.cube.bullets = bullets;
 
 bullets.tick = tick;
+bullets.clear = clear;

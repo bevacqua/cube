@@ -1,6 +1,8 @@
 var $ = require('dominus');
 var pows = require('./powerups');
 var npcs = require('./npcs');
+var bullets = require('./bullets');
+var mobs = require('./mobs');
 var npc = require('./npc');
 var scoreboard = require('./scoreboard');
 var emitter = require('./emitter');
@@ -67,6 +69,8 @@ module.exports = function (you) {
       you.addRain();
       npcs.clear();
       pows.clear();
+      mobs.clear();
+      bullets.clear();
       $('.pc-parent').but('#you, .the-man').remove();
       levels[level](you);
       enchantments.set(levels[level].enchantments);

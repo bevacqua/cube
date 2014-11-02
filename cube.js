@@ -85,6 +85,7 @@ function start () {
   audio.play('begin');
   incubateCube();
   you = mob(yourCube, { type: 'you', level: 1, speedfactor: 1.2 });
+  you.player = true;
   you.rain = 0;
   global.cube.you = you;
   emitter.emit('player.start', you);
