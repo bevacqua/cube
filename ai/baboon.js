@@ -9,7 +9,7 @@ module.exports = function (npc) {
   var goal = 700;
   var idle = 0;
   var d;
-  var redirect = throttle(changeDirection, 1000 + r() * 5000);
+  var redirect = throttle(changeDirection, 300 + r() * 1000);
 
   function changeDirection () {
     d = { x: rs(), y: rs() };

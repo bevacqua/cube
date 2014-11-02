@@ -10,8 +10,8 @@ module.exports = function (npc, enemy) {
   var goal = 700;
   var idle = 0;
   var d;
-  var redirect = throttle(changeDirection, 100 + r() * 400);
-  var shootrate = 120;
+  var redirect = throttle(changeDirection, 50 + r() * 200);
+  var shootrate = 20;
   var lastShooting = Date.now() + shootrate;
 
   function changeDirection () {

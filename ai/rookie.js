@@ -10,8 +10,8 @@ module.exports = function (npc) {
   var goal = 700;
   var idle = 0;
   var d;
-  var redirect = throttle(changeDirection, 300 + r() * 1000);
-  var shootrate = 2000;
+  var redirect = throttle(changeDirection, 300 + r() * 300);
+  var shootrate = 300;
   var lastShooting = Date.now() + shootrate;
 
   function changeDirection () {
