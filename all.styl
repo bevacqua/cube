@@ -8,5 +8,25 @@
 @import 'scoreboard'
 
 .the-man
-  .pc-face
-    animation playercubicle 3s alternate infinite
+  border 10px solid c-strong
+  border-radius 50px
+  opacity 0.4
+  transition border-color border-radius border 0.8s
+  animation playerthing 2.2s alternate infinite !important
+
+@keyframes playerthing
+  0%
+    border-radius 0
+  20%
+    border-color c-red
+    border-radius 100px
+  40%
+    border-radius 20px
+  60%
+    border-color c-pink
+    border-radius 50px
+  80%
+    border-radius 10px
+  100%
+    border-color c-yellow-js
+    border-radius 35px
