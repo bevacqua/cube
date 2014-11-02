@@ -10,8 +10,8 @@ module.exports = function (npc, enemy) {
   var goal = 700;
   var idle = 0;
   var d;
-  var redirect = throttle(changeDirection, 50 + r() * 200);
-  var shootrate = 500;
+  var redirect = throttle(changeDirection, 300 + r() * 600);
+  var shootrate = 1000;
   var lastShooting = Date.now() + shootrate;
 
   function changeDirection () {
@@ -20,6 +20,9 @@ module.exports = function (npc, enemy) {
 
   function think () {
     if (idle > goal) {
+      if (r() > 0.5) {
+        mob.addLevel(1, 8);
+      }
       redirect();
       idle = 0;
     } else {

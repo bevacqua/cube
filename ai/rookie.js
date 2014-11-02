@@ -11,7 +11,7 @@ module.exports = function (npc) {
   var idle = 0;
   var d;
   var redirect = throttle(changeDirection, 300 + r() * 300);
-  var shootrate = 300;
+  var shootrate = 1500;
   var lastShooting = Date.now() + shootrate;
 
   function changeDirection () {
@@ -31,7 +31,7 @@ module.exports = function (npc) {
     }
     var now = Date.now();
     if (now - lastShooting > shootrate) {
-      bullet(mob, { level: 1 });
+      bullet(mob, { level: Math.floor(Math.max(1, mob.level * 0.5)) });
       lastShooting = Date.now();
     }
   }
