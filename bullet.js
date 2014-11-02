@@ -1,4 +1,5 @@
 var $ = require('dominus');
+var audio = require('./audio');
 var incubate = require('./incubate');
 var bullets = require('./bullets');
 var emitter = require('./emitter');
@@ -62,6 +63,12 @@ function bullet (source, options) {
     cube.addClass('pc-smooth');
   }
 
+  function sound () {
+    if (o.audio !== false) {
+      audio.play('bullet-' + Math.max(level, 5));
+    }
+  }
+
   emitter.on('mob.remove', function (who) {
     if (who === m) {
       bullets.splice(bullets.indexOf(me), 1);
@@ -73,6 +80,7 @@ function bullet (source, options) {
   }
 
   setTimeout(smooth, 0);
+  setTimeout(sound, 50);
   setTimeout(remove, 2400);
 
   bullets.push(me);

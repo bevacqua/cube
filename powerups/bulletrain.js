@@ -5,6 +5,7 @@ var npc = require('../npc');
 var aimer = require('../ai/aimer');
 var bullet = require('../bullet');
 var powerup = require('../powerup');
+var audio = require('../audio');
 
 module.exports = function bulletrain (level) {
   function effect (player) {
@@ -18,8 +19,14 @@ module.exports = function bulletrain (level) {
     fire(-1, 0);
 
     function fire (x, y) {
-      bullet(player, { level: level, diy: { dx: x, dy: y } });
+      bullet(player, { level: level, diy: { dx: x, dy: y }, audio: false });
     }
+
+    function sound () {
+      audio.play('bulletrain');
+    }
+
+    setTimeout(sound, 50);
   }
 
   effect.words = ['BULLETRAIN!', 'TRAIN OF BULLETS.', 'YES!', 'BEASTLY', 'MAJESTUOUS!', 'DIE DIE DIE'];

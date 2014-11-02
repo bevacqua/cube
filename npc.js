@@ -2,6 +2,7 @@ var $ = require('dominus');
 var incubate = require('./incubate');
 var npcs = require('./npcs');
 var mob = require('./mob');
+var audio = require('./audio');
 var emitter = require('./emitter');
 var body = $(document.body);
 var baboon = require('./ai/baboon');
@@ -26,6 +27,7 @@ function npc (enemy, options) {
   emitter.on('mob.remove', function (who) {
     if (who === m) {
       npcs.splice(npcs.indexOf(me), 1);
+      audio.play('npc-die');
       if (m.clear !== true) {
         emitter.emit('npc.kill', npcs.length === 0, m.level);
       }

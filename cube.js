@@ -14,6 +14,7 @@ var emitter = require('./emitter');
 var incubate = require('./incubate');
 var enchantments = require('./enchantments');
 var bulletrain = require('./powerups/bulletrain');
+var audio = require('./audio');
 var body = $(document.body);
 var yourCube;
 var yourCubeInternal;
@@ -26,6 +27,7 @@ var TOP = 38;
 var RIGHT = 39;
 var BOTTOM = 40;
 var R = 82;
+var M = 77;
 var C = 67;
 
 console.log('%cWelcome to Pony Cube! Use the arrow keys.', 'font-family: "Merriweather"; font-size: 60px; color: #e92c6c;');
@@ -44,6 +46,9 @@ function specials (e) {
   if (e.which === R) {
     gameover('OK. TRY AGAIN!');
   }
+  if (e.which === M) { // mute sounds
+    audio.muted = !audio.muted;
+  }
 }
 
 function incubateCube () {
@@ -61,6 +66,7 @@ function welcome () {
     $('#welcome-one').remove();
     body.removeClass('welcome');
     body.addClass('flashy');
+    audio.play('begin');
     flashing = true;
   }
 }
@@ -99,6 +105,7 @@ function start () {
 function leveldown (m, level) {
   if (m === you) {
     emitter.emit('player.death', level);
+    audio.play('you-die');
     you.placement();
     body.addClass('deathflash');
     setTimeout(function () {
@@ -132,6 +139,7 @@ function gameloop () {
       you.damage(m.level);
     });
     if (you.kia) {
+      audio.play('you-die');
       gameover('YOU\'RE VERY MUCH DEAD WOW~!'); return;
     }
   }
