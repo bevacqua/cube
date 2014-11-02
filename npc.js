@@ -7,6 +7,16 @@ var emitter = require('./emitter');
 var body = $(document.body);
 var baboon = require('./ai/baboon');
 
+emitter.on('mob.levelchange', function (who, l, old) {
+  if (who.npc) {
+    if (l > old) {
+      audio.play('npc-grow');
+    } else if (l < old) {
+      audio.play('npc-shrink');
+    }
+  }
+});
+
 function npc (enemy, options) {
   var o = options || {};
   var level = o.level || 0;
@@ -24,8 +34,9 @@ function npc (enemy, options) {
   m.npc = me;
   m.placement();
 
-  emitter.on('mob.remove', function (who) {
+  emitter.on('mob.remove', function rm (who) {
     if (who === m) {
+      emitter.off('mob.remove', rm);
       npcs.splice(npcs.indexOf(me), 1);
       audio.play('npc-die');
       if (m.clear !== true) {

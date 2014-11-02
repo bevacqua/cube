@@ -1,4 +1,5 @@
 var throttle = require('lodash.throttle');
+var audio = require('../audio');
 
 function r () { return Math.random(); }
 function rs () { return Math.sign(r() - 0.5); }
@@ -12,6 +13,7 @@ module.exports = function (npc) {
   var redirect = throttle(changeDirection, 300 + r() * 1000);
 
   function changeDirection () {
+    audio.play('npc-think');
     d = { x: rs(), y: rs() };
   }
 

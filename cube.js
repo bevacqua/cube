@@ -66,7 +66,6 @@ function welcome () {
     $('#welcome-one').remove();
     body.removeClass('welcome');
     body.addClass('flashy');
-    audio.play('begin');
     flashing = true;
   }
 }
@@ -83,6 +82,7 @@ function rmRain (c) {
 
 function start () {
   keys = {};
+  audio.play('begin');
   incubateCube();
   you = mob(yourCube, { type: 'you', level: 1 });
   you.rain = 0;

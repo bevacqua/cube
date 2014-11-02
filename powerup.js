@@ -21,8 +21,9 @@ function pow (player, options) {
   m.pow = me;
   m.placement();
 
-  emitter.on('mob.remove', function (who) {
+  emitter.on('mob.remove', function rm (who) {
     if (who === m) {
+      emitter.off('mob.remove', rm);
       pows.splice(pows.indexOf(me), 1);
       if (me.cleanup !== true) {
         effect(player, me);

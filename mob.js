@@ -96,6 +96,12 @@ function mob (node, options) {
     return !m.gunner || !me.gunner || m.gunner !== me.gunner;
   }
 
+  function notFriendlyFire (m) {
+    var left = m.npc || (m.gunner && m.gunner.npc);
+    var right = me.npc || (me.gunner && me.gunner.npc);
+    return !(left && right);
+  }
+
   function collision (m) {
     var l = me.hitbox;
     var r = m.hitbox;
@@ -111,7 +117,13 @@ function mob (node, options) {
   }
 
   function cd () {
-    return mobs.filter(notMe).filter(notMyBullet).filter(notMyGunner).filter(notSameGunner).filter(collision);
+    return mobs
+      .filter(notMe)
+      .filter(notMyBullet)
+      .filter(notMyGunner)
+      .filter(notSameGunner)
+      .filter(notFriendlyFire)
+      .filter(collision);
   }
 
   function set (x, y) {
@@ -154,9 +166,10 @@ function mob (node, options) {
   }
 
   function setLevel (l) {
+    var old = me.level;
     me.node.find('.pc-cube').removeClass(lv(me.level)).addClass(lv(l));
     me.level = l;
-    emitter.emit('mob.levelchange', me, l);
+    emitter.emit('mob.levelchange', me, l, old);
   }
 
   function addLevel (l, m) {

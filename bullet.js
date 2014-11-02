@@ -69,9 +69,10 @@ function bullet (source, options) {
     }
   }
 
-  emitter.on('mob.remove', function (who) {
+  emitter.on('mob.remove', function rm (who) {
     if (who === m) {
       bullets.splice(bullets.indexOf(me), 1);
+      emitter.off('mob.remove', rm);
     }
   });
 
