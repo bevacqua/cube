@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "stylus -w all.styl -o compiled & watchify -d cube.js -o compiled/cube.js & open compiled/cube.html"
+    "start": "stylus -w all.styl -o compiled & watchify -d cube.js -o compiled/cube.js & open index.html"
   },
   "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
   "license": "MIT"
