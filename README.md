@@ -1,6 +1,6 @@
 # cube
 
-> Play with a cube and shoot cubes to other cubes. The boss is a cube.
+> Play with a cube and shoot cubes at other cubes. The boss is a cube. Powerups are also cubes.
 
 Epileptics beware.
 
