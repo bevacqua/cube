@@ -13,6 +13,7 @@ function mob (node, options) {
   var o = options || {};
   var speed = o.speed || 0.3;
   var topspeed = o.topspeed || 4;
+  var sf = o.speedfactor || 1;
   var accel = {
     x: o.accel && o.accel.x || 0, y: o.accel && o.accel.y || 0
   };
@@ -77,7 +78,7 @@ function mob (node, options) {
 
   function accelerate (d, m) {
     accel[d] += m ? 0.2 : -0.65;
-    accel[d] = Math.max(Math.min(topspeed, accel[d]), 0);
+    accel[d] = Math.max(Math.min(topspeed * sf, accel[d] * sf), 0);
   }
 
   function notMe (m) {

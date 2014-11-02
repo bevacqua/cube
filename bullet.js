@@ -46,7 +46,8 @@ function bullet (source, options) {
     accel: {
       x: Math.abs(dx) * ts,
       y: Math.abs(dy) * ts
-    }
+    },
+    speedfactor: o.speedfactor
   });
   var me = {
     remove: remove,
@@ -65,14 +66,13 @@ function bullet (source, options) {
 
   function sound () {
     if (o.audio !== false) {
-      audio.play('bullet-' + Math.max(level, 5));
+      audio.play('bullet-' + Math.min(level, 9));
     }
   }
 
   emitter.on('mob.remove', function rm (who) {
     if (who === m) {
       bullets.splice(bullets.indexOf(me), 1);
-      emitter.off('mob.remove', rm);
     }
   });
 

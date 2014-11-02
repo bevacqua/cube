@@ -8,7 +8,8 @@ var powerup = require('../powerup');
 var audio = require('../audio');
 
 module.exports = function bulletrain (level) {
-  function effect (player) {
+  function effect (player, options) {
+    var o = options || {};
     fire(0, -1);
     fire(0, 1);
     fire(1, 1);
@@ -19,7 +20,10 @@ module.exports = function bulletrain (level) {
     fire(-1, 0);
 
     function fire (x, y) {
-      bullet(player, { level: level, diy: { dx: x, dy: y }, audio: false });
+      if (player.kia) {
+        return; // sanity
+      }
+      bullet(player, { level: level, diy: { dx: x, dy: y }, audio: false, speedfactor: o.speedfactor });
     }
 
     function sound () {

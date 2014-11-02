@@ -21,7 +21,7 @@ function npc (enemy, options) {
   var o = options || {};
   var level = o.level || 0;
   var node = incubate();
-  var m = mob(node, { level: level, type: 'npc' });
+  var m = mob(node, { level: level, type: 'npc', speedfactor: 0.8 });
   var me = {
     node: node,
     mob: m
@@ -36,7 +36,6 @@ function npc (enemy, options) {
 
   emitter.on('mob.remove', function rm (who) {
     if (who === m) {
-      emitter.off('mob.remove', rm);
       npcs.splice(npcs.indexOf(me), 1);
       audio.play('npc-die');
       if (m.clear !== true) {

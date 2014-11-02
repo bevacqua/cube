@@ -11,7 +11,7 @@ function t (file, freq) {
   throttled[file] = throttle(play.bind(null, file), freq);
 }
 
-function play (file) {console.log(file);
+function play (file) {
   if (throttled[file]) {
     throttled[file](); return;
   }

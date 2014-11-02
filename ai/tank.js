@@ -33,7 +33,7 @@ module.exports = function (npc) {
     }
     var now = Date.now();
     if (now - lastShooting > shootrate) {
-      bulletrain(Math.floor(Math.max(1, mob.level * 0.5)))(mob);
+      bulletrain(Math.floor(Math.max(1, mob.level * 0.5)))(mob, { speedfactor: mob.speedfactor });
       lastShooting = Date.now();
     }
   }

@@ -3,6 +3,7 @@ var rookie = require('../ai/rookie');
 var aimer = require('../ai/aimer');
 var powerup = require('../powerup');
 var rainstorm = require('../powerups/rainstorm');
+var machinegun = require('../ai/machinegun');
 var chaosbringer = require('../powerups/chaosbringer');
 
 module.exports = function (you) {
