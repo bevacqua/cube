@@ -20,7 +20,10 @@ function bullet (source, options) {
   var dx = source.d.x;
   var dy = source.d.y;
   var cube = node.find('.pc-cube').addClass('pc-show');
-  if (o.aim) {
+  if (o.diy) {
+    dx = o.diy.dx;
+    dy = o.diy.dy;
+  } else if (o.aim) {
     var a = getComputedStyle(node[0]);
     var b = getComputedStyle(o.aim.node[0]);
     var x = us.u(b.left) - us.u(a.left);

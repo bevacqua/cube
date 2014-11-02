@@ -135,7 +135,7 @@ function mob (node, options) {
   function fire () {
     if (Date.now() - lastbullet > bulletrate) {
       lastbullet = Date.now();
-      bullet(me);
+      bullet(me, { level: Math.floor(Math.max(1, me.level * 0.5)) });
     }
   }
 
@@ -156,6 +156,7 @@ function mob (node, options) {
   function setLevel (l) {
     me.node.find('.pc-cube').removeClass(lv(me.level)).addClass(lv(l));
     me.level = l;
+    emitter.emit('mob.levelchange', me, l);
   }
 
   function addLevel (l, m) {

@@ -15,7 +15,11 @@ function npc (enemy, options) {
     node: node,
     mob: m
   };
+  var largestLevel = level;
+  var metrics = $('<div>').addClass('npc-metrics');
+  var lifebar = $('<div>').addClass('npc-life').appendTo(metrics);
   node.find('.pc-cube').addClass('pc-smooth pc-show');
+  node.append(metrics);
   m.npc = me;
   m.placement();
 

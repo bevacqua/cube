@@ -27,7 +27,6 @@ var R = 82;
 
 console.log('%cWelcome to Pony Cube! Use the arrow keys.', 'font-family: "Merriweather"; font-size: 60px; color: #e92c6c;');
 
-incubateCube();
 body.on('click', welcome);
 body.on('keydown', welcoming);
 body.on('keydown', specials);
@@ -65,6 +64,7 @@ function welcome () {
 
 function start () {
   keys = {};
+  incubateCube();
   you = mob(yourCube, { type: 'you' });
   emitter.emit('player.start', you);
   global.cube.you = you;
@@ -136,11 +136,14 @@ function gameover (message, classes) {
 }
 
 function cleanup () {
-  yourCubeInternal.removeClass('pc-show');
+  if (yourCubeInternal) { yourCubeInternal.removeClass('pc-show'); }
   body.off('keyup', ku);
   body.off('keydown', kd);
+  emitter.off('mob.leveldown', leveldown);
+  emitter.off('levels.win', won);
   npcs.clear();
   pows.clear();
+  yourCube.remove();
   mobs.splice(0, mobs.length);
 }
 
@@ -151,8 +154,6 @@ function won () {
 function restart (e) {
   if (e.which === SPACE) {
     body.off('keydown', restart);
-    yourCube.remove();
-    incubateCube();
     $('.rt-tint').removeClass('rt-show');
     setTimeout(start, 1000);
   }

@@ -34,7 +34,7 @@ module.exports = function (npc, enemy) {
     }
     var now = Date.now();
     if (now - lastShooting > shootrate) {
-      bullet(mob, { level: Math.floor(Math.max(1, mob.level * 0.5)), aim: enemy });
+      bullet(mob, { level: Math.min(mob.level, 2), aim: enemy });
       lastShooting = Date.now();
     }
   }

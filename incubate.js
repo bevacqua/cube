@@ -9,5 +9,4 @@ function incubate () {
   return cube;
 }
 
-
 module.exports = incubate;

@@ -26220,19 +26220,39 @@ body {
     border-color: #d11911;
     -webkit-border-radius: 100px;
     border-radius: 100px;
+    -webkit-transform: skew(2deg);
+    -moz-transform: skew(2deg);
+    -o-transform: skew(2deg);
+    -ms-transform: skew(2deg);
+    transform: skew(2deg);
   }
   40% {
     -webkit-border-radius: 20px;
     border-radius: 20px;
+    -webkit-transform: skew(9deg);
+    -moz-transform: skew(9deg);
+    -o-transform: skew(9deg);
+    -ms-transform: skew(9deg);
+    transform: skew(9deg);
   }
   60% {
     border-color: #e92c6c;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    -webkit-transform: skew(4deg);
+    -moz-transform: skew(4deg);
+    -o-transform: skew(4deg);
+    -ms-transform: skew(4deg);
+    transform: skew(4deg);
   }
   80% {
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    -o-transform: skew(-5deg);
+    -ms-transform: skew(-5deg);
+    transform: skew(-5deg);
   }
   100% {
     border-color: #f1e05a;
@@ -26249,19 +26269,39 @@ body {
     border-color: #d11911;
     -webkit-border-radius: 100px;
     border-radius: 100px;
+    -webkit-transform: skew(2deg);
+    -moz-transform: skew(2deg);
+    -o-transform: skew(2deg);
+    -ms-transform: skew(2deg);
+    transform: skew(2deg);
   }
   40% {
     -webkit-border-radius: 20px;
     border-radius: 20px;
+    -webkit-transform: skew(9deg);
+    -moz-transform: skew(9deg);
+    -o-transform: skew(9deg);
+    -ms-transform: skew(9deg);
+    transform: skew(9deg);
   }
   60% {
     border-color: #e92c6c;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    -webkit-transform: skew(4deg);
+    -moz-transform: skew(4deg);
+    -o-transform: skew(4deg);
+    -ms-transform: skew(4deg);
+    transform: skew(4deg);
   }
   80% {
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    -o-transform: skew(-5deg);
+    -ms-transform: skew(-5deg);
+    transform: skew(-5deg);
   }
   100% {
     border-color: #f1e05a;
@@ -26278,19 +26318,39 @@ body {
     border-color: #d11911;
     -webkit-border-radius: 100px;
     border-radius: 100px;
+    -webkit-transform: skew(2deg);
+    -moz-transform: skew(2deg);
+    -o-transform: skew(2deg);
+    -ms-transform: skew(2deg);
+    transform: skew(2deg);
   }
   40% {
     -webkit-border-radius: 20px;
     border-radius: 20px;
+    -webkit-transform: skew(9deg);
+    -moz-transform: skew(9deg);
+    -o-transform: skew(9deg);
+    -ms-transform: skew(9deg);
+    transform: skew(9deg);
   }
   60% {
     border-color: #e92c6c;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    -webkit-transform: skew(4deg);
+    -moz-transform: skew(4deg);
+    -o-transform: skew(4deg);
+    -ms-transform: skew(4deg);
+    transform: skew(4deg);
   }
   80% {
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    -o-transform: skew(-5deg);
+    -ms-transform: skew(-5deg);
+    transform: skew(-5deg);
   }
   100% {
     border-color: #f1e05a;
@@ -26307,19 +26367,39 @@ body {
     border-color: #d11911;
     -webkit-border-radius: 100px;
     border-radius: 100px;
+    -webkit-transform: skew(2deg);
+    -moz-transform: skew(2deg);
+    -o-transform: skew(2deg);
+    -ms-transform: skew(2deg);
+    transform: skew(2deg);
   }
   40% {
     -webkit-border-radius: 20px;
     border-radius: 20px;
+    -webkit-transform: skew(9deg);
+    -moz-transform: skew(9deg);
+    -o-transform: skew(9deg);
+    -ms-transform: skew(9deg);
+    transform: skew(9deg);
   }
   60% {
     border-color: #e92c6c;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    -webkit-transform: skew(4deg);
+    -moz-transform: skew(4deg);
+    -o-transform: skew(4deg);
+    -ms-transform: skew(4deg);
+    transform: skew(4deg);
   }
   80% {
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    -o-transform: skew(-5deg);
+    -ms-transform: skew(-5deg);
+    transform: skew(-5deg);
   }
   100% {
     border-color: #f1e05a;
