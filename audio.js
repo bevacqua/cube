@@ -6,6 +6,7 @@ var audio = {
 var throttled = {};
 
 t('npc-think', 8500);
+t('bullet-0', 1000);
 
 function t (file, freq) {
   throttled[file] = throttle(play.bind(null, file), freq);

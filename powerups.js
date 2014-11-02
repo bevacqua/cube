@@ -4,7 +4,7 @@ function clear () {
   var pow;
   while ((pow = powerups.shift())) {
     pow.cleanup = true;
-    pow.node.remove();
+    pow.mob.remove();
   }
 }
 
