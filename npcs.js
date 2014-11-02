@@ -2,7 +2,7 @@ var npcs = [];
 
 function clear () {
   var npc;
-  while (npc = npcs.shift()) {
+  while ((npc = npcs.shift())) {
     npc.mob.clear = true;
     npc.mob.remove();
   }

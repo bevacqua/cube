@@ -12,13 +12,16 @@ module.exports = function (level) {
     }, 300);
 
     while (level-- && npcs.length) {
-      npc = npcs[Math.floor(Math.random() * effect.words.length)]
+      npc = npcs[Math.floor(Math.random() * effect.words.length)];
       if (npc) {
-        setTimeout(function () {
-          npc.mob.damage(level);
-        }, Math.random() * 300);
+        setTimeout(damage, Math.random() * 300);
       }
     }
+
+    function  damage () {
+      npc.mob.damage(level);
+    }
+
     npcs.forEach(function (npc, i) {
       if (i < level) {
         npc.mob.damage(level);

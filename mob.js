@@ -173,6 +173,6 @@ function mob (node, options) {
   }
 
   return me;
-};
+}
 
 module.exports = mob;

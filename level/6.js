@@ -2,6 +2,7 @@ var npc = require('../npc');
 var powerup = require('../powerup');
 var rookie = require('../ai/rookie');
 var aimer = require('../ai/aimer');
+var machinegun = require('../ai/machinegun');
 
 module.exports = function (you) {
   you.addLevel(1, 2);

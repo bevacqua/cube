@@ -2,7 +2,7 @@ var powerups = [];
 
 function clear () {
   var pow;
-  while (pow = powerups.shift()) {
+  while ((pow = powerups.shift())) {
     pow.cleanup = true;
     pow.node.remove();
   }

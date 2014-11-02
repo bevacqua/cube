@@ -13,8 +13,12 @@ module.exports = function (you) {
   npc(you, { ai: aimer }).node.addClass('npc-disc');
   npc(you, { ai: aimer, level: 1 });
   npc(you, { ai: aimer });
-  npc(you, { ai: aimer });
-  npc(you, { ai: aimer });
-  npc(you, { ai: aimer });
+  npc(you, { ai: aimer }).node.addClass('npc-mass');
+  npc(you, { ai: machinegun, level: 3 });
+  npc(you, { ai: machinegun, level: 2 });
+  npc(you, { ai: machinegun, level: 2 });
+  npc(you, { ai: machinegun, level: 2 });
+  npc(you, { ai: machinegun }).node.addClass('npc-funk');
+  npc(you, { ai: machinegun }).node.addClass('npc-funk');
   npc(you, { ai: rookie, level: 2 }).node.addClass('npc-mass');
 };
