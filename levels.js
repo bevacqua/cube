@@ -31,12 +31,14 @@ module.exports = function (you) {
   };
 
   emitter.on('npc.kill', function (cleared) {
+    var next = level + 1;
     if (cleared) {
-      if (levels[++level]) {
-        console.log('%cLEVEL %s CLEAR WOW~!', 'font-family: "Cardo"; font-size: 25px; color: #ffd2d2;', level);
+      if (levels[next]) {
+        ++level;
+        console.log('%cLEVEL %s CLEAR WOW~!', 'font-family: "Cardo"; font-size: 25px; color: #ffd2d2;', next);
         setTimeout(reset, 600);
       } else {
-        console.log('%cLEVEL %s CLEAR ZOMG SUCH GAMER~!', 'font-family: "Cardo"; font-size: 25px; color: #a4d4e6;', level);
+        console.log('%cLEVEL %s CLEAR ZOMG SUCH GAMER~!', 'font-family: "Cardo"; font-size: 25px; color: #a4d4e6;', next);
         setTimeout(won, 600);
       }
     }
