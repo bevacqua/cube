@@ -1,22 +1,3 @@
-.rt-tint
-  position fixed
-  top 0
-  left 0
-  right 0
-  bottom 0
-  background-color c-red-shadow
-  opacity 0
-  z-index 10
-  transition all 1s ease-in-out 0.3s
-  border 60px dashed c-pink-light
-
-.rt-tint.rt-show
-  opacity 1
-  border-color c-pink
-
-  .rt-repo
-    display block
-
 .rt-message
   position absolute
   left 30px
@@ -42,3 +23,35 @@
   text-decoration none
   color c-pink
   font-size 70px
+
+.rt-tint
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background-color c-red-shadow
+  opacity 0
+  z-index 10
+  transition all 1s ease-in-out 0.3s
+  border 60px dashed c-pink-light
+
+.rt-show
+  opacity 1
+  border-color c-pink
+
+  .rt-repo
+    display block
+
+.rt-won
+  background-color c-yellow-js
+  border-color c-blue-light
+
+  .rt-message
+    background-color c-blue-light
+
+  .rt-repo
+    color c-blue-light
+
+  &.rt-show
+    border-color c-blue-light

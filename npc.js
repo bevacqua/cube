@@ -9,7 +9,7 @@ var baboon = require('./ai/baboon');
 function npc (enemy, options) {
   var o = options || {};
   var level = o.level || 0;
-  var node = incubate().attr('id', '');
+  var node = incubate();
   var m = mob(node, { level: level, type: 'npc' });
   var me = {
     node: node,
@@ -22,7 +22,9 @@ function npc (enemy, options) {
   emitter.on('mob.remove', function (who) {
     if (who === m) {
       npcs.splice(npcs.indexOf(me), 1);
-      emitter.emit('npc.kill', npcs.length === 0);
+      if (m.clear !== true) {
+        emitter.emit('npc.kill', npcs.length === 0, m.level);
+      }
     }
   });
 

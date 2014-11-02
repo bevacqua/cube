@@ -1,4 +1,8 @@
 var $ = require('dominus');
+
+global.$ = $;
+global.cube = {};
+
 var mob = require('./mob');
 var mobs = require('./mobs');
 var npc = require('./npc');
@@ -21,8 +25,6 @@ var RIGHT = 39;
 var BOTTOM = 40;
 var R = 82;
 
-global.$ = $;
-
 console.log('%cWelcome to Pony Cube! Use the arrow keys.', 'font-family: "Merriweather"; font-size: 60px; color: #e92c6c;');
 
 incubateCube();
@@ -43,7 +45,7 @@ function specials (e) {
 }
 
 function incubateCube () {
-  yourCube = incubate();
+  yourCube = incubate().addClass('the-man');
   yourCubeInternal = yourCube.find('.pc-cube');
 }
 
@@ -64,7 +66,10 @@ function welcome () {
 function start () {
   keys = {};
   you = mob(yourCube, { type: 'you' });
+  emitter.emit('player.start', you);
+  global.cube.you = you;
   emitter.on('mob.leveldown', leveldown);
+  emitter.on('levels.win', won);
   yourCubeInternal.addClass('pc-show');
   body.off('click', welcome);
   body.off('keydown', welcoming);
@@ -74,8 +79,9 @@ function start () {
   levels(you);
 }
 
-function leveldown (m) {
+function leveldown (m, level) {
   if (m === you) {
+    emitter.emit('player.death', level);
     you.placement();
     body.addClass('deathflash');
     setTimeout(function () {
@@ -117,8 +123,10 @@ function gameloop () {
   requestAnimationFrame(gameloop);
 }
 
-function gameover (message) {
-  $('.rt-tint').addClass('rt-show');
+function gameover (message, classes) {
+  emitter.off('levels.win', won);
+  $('.rt-tint').addClass(['rt-show'].concat(classes || []).join(' '));
+  $('.rt-text').text(message);
   cleanup();
   console.log('%c%s', 'font-family: "Comic Sans MS"; font-size: 25px; color: #d11911;', message);
 
@@ -134,6 +142,10 @@ function cleanup () {
   npcs.clear();
   pows.clear();
   mobs.splice(0, mobs.length);
+}
+
+function won () {
+  gameover('ZOMG YOU WON!', ['rt-won']);
 }
 
 function restart (e) {

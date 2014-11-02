@@ -8,6 +8,6 @@ function clear () {
   }
 }
 
-module.exports = powerups;
+module.exports = global.cube.powerup = powerups;
 
 powerups.clear = clear;

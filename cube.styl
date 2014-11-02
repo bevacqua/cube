@@ -45,7 +45,6 @@ pc-cube(cubeSize, fontSize, keyframeSuffix, spinOffset=0%, darkenFactor=0%)
     transform rotateX(x) rotateY(y) translateZ(half)
     background-color rgba(darken(spin(c, spinOffset), darkenFactor), 0.9)
     border 5px dashed darken(spin(darken(c, 15%), spinOffset), darkenFactor)
-    box-shadow 3px 3px 50px darken(spin(c, spinOffset), darkenFactor)
     opacity 1
 
   .pc-faces

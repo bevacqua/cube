@@ -1,4 +1,5 @@
 var $ = require('dominus');
+var incubate = require('./incubate');
 var bullets = require('./bullets');
 var emitter = require('./emitter');
 var us = require('./us');
@@ -11,7 +12,10 @@ function bullet (source, options) {
   var level = o.level || 0;
   var mob = require('./mob');
   var body = $(document.body);
-  var node = source.node.clone().appendTo(body).attr('id', '');
+  var s = getComputedStyle(source.node[0]);
+  var node = incubate();
+  node[0].style.top = s.top;
+  node[0].style.left = s.left;
   var ts = 12;
   var dx = source.d.x;
   var dy = source.d.y;

@@ -9,7 +9,7 @@ var lifesaver = require('./powerups/lifesaver');
 function pow (player, options) {
   var o = options || {};
   var level = o.level || 0;
-  var node = incubate().attr('id', '');
+  var node = incubate();
   var m = mob(node, { level: level, type: 'pow' });
   var me = {
     node: node,
@@ -25,6 +25,7 @@ function pow (player, options) {
       pows.splice(pows.indexOf(me), 1);
       if (me.cleanup !== true) {
         effect(player, me);
+        emitter.emit('pow.use', m.level);
       }
     }
   });

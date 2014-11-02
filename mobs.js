@@ -1,3 +1,3 @@
 var mobs = []
 
-module.exports = mobs;
+module.exports = global.cube.mob = mobs;
