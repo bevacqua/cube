@@ -15,9 +15,6 @@ module.exports = function (you) {
   npc(you, { ai: aimer, level: 1 });
   npc(you, { ai: aimer });
   npc(you, { ai: machinegun, level: 3 });
-  npc(you, { ai: machinegun, level: 2 });
-  npc(you, { ai: machinegun, level: 2 });
-  npc(you, { ai: machinegun, level: 2 });
   npc(you, { ai: machinegun }).node.addClass('npc-funk');
   npc(you, { ai: machinegun }).node.addClass('npc-funk');
   npc(you, { ai: aimer });

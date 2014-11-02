@@ -135,7 +135,7 @@ function mob (node, options) {
   function fire () {
     if (Date.now() - lastbullet > bulletrate) {
       lastbullet = Date.now();
-      bullet(me, { level: Math.floor(Math.max(1, me.level * 0.5)) });
+      bullet(me, { level: me.level });
     }
   }
 

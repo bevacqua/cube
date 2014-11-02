@@ -4,6 +4,7 @@ var emitter = require('./emitter');
 var level = $('.sc-level');
 var points = $('.sc-points');
 var lives = $('.sc-lives');
+var cbomb = $('.sc-bombs');
 var score = 0;
 var gameLevel = 0;
 var player;
@@ -29,6 +30,11 @@ emitter.on('levels.change', function (level) {
   add(us.mm(gameLevel, gameLevel * 2));
 });
 
+emitter.on('player.rain', function (r) {
+  rain = r;
+  update();
+});
+
 function reset () {
   score = 0;
   update();
@@ -43,6 +49,7 @@ function update () {
   level.text(gameLevel);
   lives.text(player.level + 1);
   points.text(score);
+  cbomb.text(rain);
 }
 
 module.exports = {

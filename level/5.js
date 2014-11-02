@@ -11,10 +11,7 @@ module.exports = function (you) {
   npc(you, { ai: aimer, level: 1 });
   npc(you, { ai: aimer });
   npc(you, { ai: machinegun, level: 3 });
-  npc(you, { ai: machinegun, level: 3 });
-  npc(you, { ai: machinegun, level: 3 });
   npc(you, { ai: rookie, level: 2 }).node.addClass('npc-mass');
-  powerup(you, { effect: bulletrain(2) });
   powerup(you, { effect: bulletrain(2) });
   powerup(you, { effect: bulletrain(2) });
   powerup(you, { effect: bulletrain(2) });

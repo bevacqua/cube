@@ -1,6 +1,7 @@
 var $ = require('dominus');
 var body = $(document.body);
 var npcs = require('../npcs');
+var us = require('../us');
 
 module.exports = function (level) {
   function effect (player, pow) {
@@ -12,13 +13,10 @@ module.exports = function (level) {
     }, 300);
 
     while (level-- && npcs.length) {
-      npc = npcs[Math.floor(Math.random() * effect.words.length)];
-      if (npc) {
-        setTimeout(damage, Math.random() * 300);
-      }
+      setTimeout(damage.bind(null, us.r(npcs)), Math.random() * 300);
     }
 
-    function  damage () {
+    function  damage (npc) {
       npc.mob.damage(level);
     }
 

@@ -6,8 +6,8 @@ var aimer = require('../ai/aimer');
 var bullet = require('../bullet');
 var powerup = require('../powerup');
 
-module.exports = function chaosbringer (level) {
-  function effect (player, pow) {
+module.exports = function bulletrain (level) {
+  function effect (player) {
     fire(0, -1);
     fire(0, 1);
     fire(1, 1);
@@ -16,10 +16,10 @@ module.exports = function chaosbringer (level) {
     fire(-1, -1);
     fire(-1, 1);
     fire(-1, 0);
-  }
 
-  function fire (x, y) {
-    bullet(player, { level: level, diy: { dx: x, dy: y } });
+    function fire (x, y) {
+      bullet(player, { level: level, diy: { dx: x, dy: y } });
+    }
   }
 
   effect.words = ['BULLETRAIN!', 'TRAIN OF BULLETS.', 'YES!', 'BEASTLY', 'MAJESTUOUS!', 'DIE DIE DIE'];

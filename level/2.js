@@ -2,6 +2,7 @@ var npc = require('../npc');
 var rookie = require('../ai/rookie');
 var machinegun = require('../ai/machinegun');
 var growingpain = require('../ai/growingpain');
+var growatog = require('../enchantments/growatog');
 var powerup = require('../powerup');
 
 module.exports = function (you) {
@@ -11,3 +12,7 @@ module.exports = function (you) {
   npc(you, { ai: machinegun });
   powerup(you);
 };
+
+module.exports.enchantments = [
+  growatog(2)
+];

@@ -12,6 +12,8 @@ var bullets = require('./bullets');
 var levels = require('./levels');
 var emitter = require('./emitter');
 var incubate = require('./incubate');
+var enchantments = require('./enchantments');
+var bulletrain = require('./powerups/bulletrain');
 var body = $(document.body);
 var yourCube;
 var yourCubeInternal;
@@ -24,6 +26,7 @@ var TOP = 38;
 var RIGHT = 39;
 var BOTTOM = 40;
 var R = 82;
+var C = 67;
 
 console.log('%cWelcome to Pony Cube! Use the arrow keys.', 'font-family: "Merriweather"; font-size: 60px; color: #e92c6c;');
 
@@ -62,21 +65,35 @@ function welcome () {
   }
 }
 
+function addRain (c) {
+  this.rain += c || 1;
+  emitter.emit('player.rain', this.rain);
+}
+
+function rmRain (c) {
+  this.rain -= c || 1;
+  emitter.emit('player.rain', this.rain);
+}
+
 function start () {
   keys = {};
   incubateCube();
-  you = mob(yourCube, { type: 'you' });
-  emitter.emit('player.start', you);
+  you = mob(yourCube, { type: 'you', level: 1 });
+  you.rain = 0;
   global.cube.you = you;
+  emitter.emit('player.start', you);
   emitter.on('mob.leveldown', leveldown);
   emitter.on('levels.win', won);
+  you.rmRain = rmRain.bind(you);
+  you.addRain = addRain.bind(you);
+  you.addRain(2);
   yourCubeInternal.addClass('pc-show');
   body.off('click', welcome);
   body.off('keydown', welcoming);
   body.on('keydown', kd);
   body.on('keyup', ku);
-  gameloop();
   levels(you);
+  gameloop();
 }
 
 function leveldown (m, level) {
@@ -106,6 +123,7 @@ function gameloop () {
   you.move(l ? -1 : (r ? 1 : 0), t ? -1 : (b ? 1 : 0));
   npcs.tick();
   bullets.tick();
+  enchantments.tick();
   var cd = you.cd();
   var cdNoPows = cd.filter(noPows);
   cd.filter(onlyPows).forEach(usePow);
@@ -117,7 +135,11 @@ function gameloop () {
       gameover('YOU\'RE VERY MUCH DEAD WOW~!'); return;
     }
   }
-  if (u) {
+  if (keys[C] && you.rain > 0) {
+    keys[C] = false; // save precious rain!
+    you.rmRain();
+    bulletrain(you.level)(you);
+  } else if (u) {
     you.fire();
   }
   requestAnimationFrame(gameloop);
@@ -136,15 +158,17 @@ function gameover (message, classes) {
 }
 
 function cleanup () {
-  if (yourCubeInternal) { yourCubeInternal.removeClass('pc-show'); }
+  keys = {};
+  enchantments.set();
   body.off('keyup', ku);
   body.off('keydown', kd);
   emitter.off('mob.leveldown', leveldown);
   emitter.off('levels.win', won);
   npcs.clear();
   pows.clear();
-  yourCube.remove();
   mobs.splice(0, mobs.length);
+  if (yourCubeInternal) { yourCubeInternal.removeClass('pc-show'); }
+  if (yourCube) { yourCube.remove(); }
 }
 
 function won () {

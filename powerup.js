@@ -2,6 +2,7 @@ var $ = require('dominus');
 var incubate = require('./incubate');
 var pows = require('./powerups');
 var mob = require('./mob');
+var us = require('./us');
 var emitter = require('./emitter');
 var body = $(document.body);
 var lifesaver = require('./powerups/lifesaver');
@@ -31,7 +32,7 @@ function pow (player, options) {
   });
 
   function wordup (face) {
-    face.innerText = effect.words[Math.floor(Math.random() * effect.words.length)];
+    face.innerText = us.r(effect.words);
   }
 
   node.find('.pc-face').forEach(wordup);

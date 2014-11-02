@@ -4,17 +4,22 @@ var npcs = require('./npcs');
 var npc = require('./npc');
 var scoreboard = require('./scoreboard');
 var emitter = require('./emitter');
+var enchantments = require('./enchantments');
 var listeners = [];
 
 function once (fn) {
   var discarded;
-  return function () {
+  var f = function () {
     if (discarded) {
       return;
     }
     discarded = true;
     return fn.apply(null, arguments);
   };
+  Object.keys(fn).forEach(function (key) {
+    f[key] = fn[key];
+  });
+  return f;
 }
 
 module.exports = function (you) {
@@ -54,14 +59,17 @@ module.exports = function (you) {
   }
 
   function reset () {
+    enchantments.set();
     emitter.emit('levels.change', level);
     scoreboard.add(level * 15);
     you.set(50, 50);
     if (levels[level]) {
+      you.addRain();
       npcs.clear();
       pows.clear();
       $('.pc-parent').but('#you, .the-man').remove();
       levels[level](you);
+      enchantments.set(levels[level].enchantments);
     }
   }
 
