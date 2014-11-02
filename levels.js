@@ -4,6 +4,7 @@ var npcs = require('./npcs');
 var npc = require('./npc');
 var scoreboard = require('./scoreboard');
 var emitter = require('./emitter');
+var listeners = [];
 
 function once (fn) {
   var discarded;
@@ -30,7 +31,15 @@ module.exports = function (you) {
     8: once(require('./level/8')),
   };
 
-  emitter.on('npc.kill', function (cleared) {
+  listeners.forEach(function (listener) {
+    emitter.off('npc.kill', listener);
+  });
+  listeners.push(npcKill);
+  emitter.on('npc.kill', npcKill);
+  scoreboard.reset(you);
+  reset();
+
+  function npcKill (cleared) {
     var next = level + 1;
     if (cleared) {
       if (levels[next]) {
@@ -42,10 +51,7 @@ module.exports = function (you) {
         setTimeout(won, 600);
       }
     }
-  });
-
-  scoreboard.reset(you);
-  reset();
+  }
 
   function reset () {
     emitter.emit('levels.change', level);
