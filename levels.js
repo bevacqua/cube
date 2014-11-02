@@ -23,7 +23,7 @@ function once (fn) {
 }
 
 module.exports = function (you) {
-  var level = 8;
+  var level = 0;
   var levels = {
     0: once(require('./level/0')),
     1: once(require('./level/1')),
